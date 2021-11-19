@@ -1,0 +1,1236 @@
+fileFormatVersion: 2
+guid: 94e4897041698384c9bc7e115b2fb7a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9190569897428768440
+    second: pngfind.com-alphabet-png-76695_0
+  - first:
+      213: -2282398383699285331
+    second: pngfind.com-alphabet-png-76695_1
+  - first:
+      213: 7234985975977101514
+    second: pngfind.com-alphabet-png-76695_2
+  - first:
+      213: 4989303622146320172
+    second: pngfind.com-alphabet-png-76695_3
+  - first:
+      213: 998950010128564223
+    second: pngfind.com-alphabet-png-76695_4
+  - first:
+      213: -4313912651241850788
+    second: pngfind.com-alphabet-png-76695_5
+  - first:
+      213: 504538239615603975
+    second: pngfind.com-alphabet-png-76695_6
+  - first:
+      213: 6546586838030069305
+    second: pngfind.com-alphabet-png-76695_7
+  - first:
+      213: 7955022033809186193
+    second: pngfind.com-alphabet-png-76695_8
+  - first:
+      213: -1347406703568177829
+    second: pngfind.com-alphabet-png-76695_9
+  - first:
+      213: 4490190846910431196
+    second: pngfind.com-alphabet-png-76695_10
+  - first:
+      213: -4111722727785288180
+    second: pngfind.com-alphabet-png-76695_11
+  - first:
+      213: -2041484722853162022
+    second: pngfind.com-alphabet-png-76695_12
+  - first:
+      213: 2682911202439522697
+    second: pngfind.com-alphabet-png-76695_13
+  - first:
+      213: -7729438591282336649
+    second: pngfind.com-alphabet-png-76695_14
+  - first:
+      213: 7942432882853203574
+    second: pngfind.com-alphabet-png-76695_15
+  - first:
+      213: -5965282460165560938
+    second: pngfind.com-alphabet-png-76695_16
+  - first:
+      213: 3756271503263595296
+    second: pngfind.com-alphabet-png-76695_17
+  - first:
+      213: 8545919578713715848
+    second: pngfind.com-alphabet-png-76695_18
+  - first:
+      213: 2773089198922561356
+    second: pngfind.com-alphabet-png-76695_19
+  - first:
+      213: -2653347246236098843
+    second: pngfind.com-alphabet-png-76695_20
+  - first:
+      213: 8729481467772000749
+    second: pngfind.com-alphabet-png-76695_21
+  - first:
+      213: 6815867710707080511
+    second: pngfind.com-alphabet-png-76695_22
+  - first:
+      213: -2884899295075164459
+    second: pngfind.com-alphabet-png-76695_23
+  - first:
+      213: -3916828097966734194
+    second: pngfind.com-alphabet-png-76695_24
+  - first:
+      213: -99724594728689654
+    second: pngfind.com-alphabet-png-76695_25
+  - first:
+      213: -8851765340333912206
+    second: pngfind.com-alphabet-png-76695_26
+  - first:
+      213: -8294893733859481232
+    second: pngfind.com-alphabet-png-76695_27
+  - first:
+      213: 7154066551809221487
+    second: pngfind.com-alphabet-png-76695_28
+  - first:
+      213: -368379752592070421
+    second: pngfind.com-alphabet-png-76695_29
+  - first:
+      213: 6136646591856787033
+    second: pngfind.com-alphabet-png-76695_30
+  - first:
+      213: 3003644594074682120
+    second: pngfind.com-alphabet-png-76695_31
+  - first:
+      213: 6207275522984165583
+    second: pngfind.com-alphabet-png-76695_32
+  - first:
+      213: 1734857538728360418
+    second: pngfind.com-alphabet-png-76695_33
+  - first:
+      213: -1257257500661219726
+    second: pngfind.com-alphabet-png-76695_34
+  - first:
+      213: -4345225980449488782
+    second: pngfind.com-alphabet-png-76695_35
+  - first:
+      213: -5544510351918914434
+    second: pngfind.com-alphabet-png-76695_36
+  - first:
+      213: -9176660114422991727
+    second: pngfind.com-alphabet-png-76695_37
+  - first:
+      213: -2507540332133174400
+    second: pngfind.com-alphabet-png-76695_38
+  - first:
+      213: -4358431344744039221
+    second: pngfind.com-alphabet-png-76695_39
+  - first:
+      213: 8711248832356583137
+    second: pngfind.com-alphabet-png-76695_40
+  - first:
+      213: -165175445326742148
+    second: pngfind.com-alphabet-png-76695_41
+  - first:
+      213: -4123684298369359191
+    second: pngfind.com-alphabet-png-76695_42
+  - first:
+      213: -5238106177167488913
+    second: pngfind.com-alphabet-png-76695_43
+  - first:
+      213: 7103217435257022682
+    second: pngfind.com-alphabet-png-76695_44
+  - first:
+      213: 3756508414447507042
+    second: pngfind.com-alphabet-png-76695_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 710
+        width: 84
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8492c5c3f59847080800000000000000
+      internalID: -9190569897428768440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 710
+        width: 84
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daaadaf33ca4350e0800000000000000
+      internalID: -2282398383699285331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 711
+        width: 75
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac84c0d9965d76460800000000000000
+      internalID: 7234985975977101514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 710
+        width: 84
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27e99ab5319d3540800000000000000
+      internalID: 4989303622146320172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 710
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffff516ddbbfcdd00800000000000000
+      internalID: 998950010128564223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_5
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 710
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c587aaebc47e124c0800000000000000
+      internalID: -4313912651241850788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 593
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70593e31bda700700800000000000000
+      internalID: 504538239615603975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 473
+        width: 149
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ea70c3b062ada50800000000000000
+      internalID: 6546586838030069305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_8
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 593
+        width: 50
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d1a99646ae56e60800000000000000
+      internalID: 7955022033809186193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 592
+        width: 75
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55b6d1fdbc0d4de0800000000000000
+      internalID: -1347406703568177829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_10
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 591
+        width: 84
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf7ec309cc505e30800000000000000
+      internalID: 4490190846910431196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_11
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 595
+        width: 67
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e2573c6f930f6c0800000000000000
+      internalID: -4111722727785288180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_12
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 590
+        width: 101
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad353f7f5703ba3e0800000000000000
+      internalID: -2041484722853162022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 475
+        width: 84
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989e251268d9b3520800000000000000
+      internalID: 2682911202439522697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_14
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 475
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cab65bd848bb490800000000000000
+      internalID: -7729438591282336649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 475
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ec8da40a0393e60800000000000000
+      internalID: 7942432882853203574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_16
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 474
+        width: 84
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695a6f8353f073da0800000000000000
+      internalID: -5965282460165560938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_17
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 475
+        width: 84
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bf2f7d705f02430800000000000000
+      internalID: 3756271503263595296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_18
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 359
+        width: 84
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88479402494399670800000000000000
+      internalID: 8545919578713715848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 357
+        width: 85
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4770481fedfb7620800000000000000
+      internalID: 2773089198922561356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_20
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 359
+        width: 85
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee1652dcba6d2bd0800000000000000
+      internalID: -2653347246236098843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_21
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 356
+        width: 102
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9d7e7e429552970800000000000000
+      internalID: 8729481467772000749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_22
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 356
+        width: 85
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d10c42293d69e50800000000000000
+      internalID: 6815867710707080511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_23
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 359
+        width: 84
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de15404067c6f7d0800000000000000
+      internalID: -2884899295075164459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 237
+        width: 101
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e848c6ed891a4a9c0800000000000000
+      internalID: -3916828097966734194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 241
+        width: 67
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00a3db6205bd9ef0800000000000000
+      internalID: -99724594728689654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_26
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 240
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f48465256382580800000000000000
+      internalID: -8851765340333912206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_27
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 241
+        width: 67
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07921b7e81e92ec80800000000000000
+      internalID: -8294893733859481232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_28
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 242
+        width: 75
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63a71000a9584360800000000000000
+      internalID: 7154066551809221487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_29
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 240
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8ad48119043eaf0800000000000000
+      internalID: -368379752592070421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_30
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 241
+        width: 67
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e3cbbdf8fb92550800000000000000
+      internalID: 6136646591856787033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_31
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 124
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803085528d61fa920800000000000000
+      internalID: 3003644594074682120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_32
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 125
+        width: 67
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0c27a533ca42650800000000000000
+      internalID: 6207275522984165583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_33
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 125
+        width: 67
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9ffc36db3731810800000000000000
+      internalID: 1734857538728360418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_34
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 124
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e74e1e6f25d8ee0800000000000000
+      internalID: -1257257500661219726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_35
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 127
+        width: 34
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27082862ef7a2b3c0800000000000000
+      internalID: -4345225980449488782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_36
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 126
+        width: 67
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74a5640631fd03b0800000000000000
+      internalID: -5544510351918914434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_37
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 122
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1947257fe34f5a080800000000000000
+      internalID: -9176660114422991727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_38
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 121
+        width: 84
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083bc3b7a5d633dd0800000000000000
+      internalID: -2507540332133174400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_39
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 7
+        width: 85
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc7a9ea8cdb383c0800000000000000
+      internalID: -4358431344744039221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_40
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 105
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e686aaa8a294e870800000000000000
+      internalID: 8711248832356583137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_41
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 28
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dbeafbecd25bdf0800000000000000
+      internalID: -165175445326742148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_42
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 41
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2a6d59afab5c6c0800000000000000
+      internalID: -4123684298369359191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_43
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 36
+        width: 84
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68072e3f228e47b0800000000000000
+      internalID: -5238106177167488913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_44
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 43
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad82bd67f92b39260800000000000000
+      internalID: 7103217435257022682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngfind.com-alphabet-png-76695_45
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 40
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266d8e6008cc12430800000000000000
+      internalID: 3756508414447507042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
