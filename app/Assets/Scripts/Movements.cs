@@ -14,7 +14,10 @@ public class Movements : MonoBehaviour
     public float speed = 15f;
     public float force = 3f;
     private Animator anim;
-    
+    private bool grounded;
+
+
+ 
 
     private void Awake()
     {
@@ -35,10 +38,9 @@ public class Movements : MonoBehaviour
         
         transform.rotation = rotation;
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-        Debug.Log(body.velocity);
 
-        if (Input.GetKey(KeyCode.Space))
-            body.velocity = new Vector2(body.velocity.x, force);
+        if (Input.GetKey(KeyCode.Space) && grounded)
+            jump();
 
         //flip horizonatally 
         if (horizontalInput > 0.01)
@@ -62,30 +64,18 @@ public class Movements : MonoBehaviour
         anim.SetBool("Move", horizontalInput != 0);
     }
 
+    private void jump() {
 
+        body.velocity = new Vector2(body.velocity.x, force);
+        grounded = false;
 
+    }
 
-    //Rigidbody2D m_Rigidbody;
-    //public float m_Speed = 5f;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+            grounded = true;
+    }
 
-    //void Start()
-    //{
-    //    //Fetch the Rigidbody from the GameObject with this script attached
-    //    m_Rigidbody = GetComponent<Rigidbody2D>();
-    //}
-
-    //void FixedUpdate()
-    //{
-    //    Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-    //    //Debug.Log(pos);
-    //    pos.x = Mathf.Clamp01(pos.x);
-    //    pos.y = Mathf.Clamp01(pos.y);
-    //    //Store user input as a movement vector
-    //    Vector3 m_Input = new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"),0);
-
-    //    //Apply the movement vector to the current position, which is
-    //    //multiplied by deltaTime and speed for a smooth MovePosition
-    //    m_Rigidbody.MovePosition(transform.position + m_Input * Time.deltaTime * m_Speed);
-    //}
 
 }
