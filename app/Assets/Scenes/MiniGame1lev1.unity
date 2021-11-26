@@ -940,11 +940,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fede4aa2d08876944991afc86dbf7b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Words:
-  - image: {fileID: 7537058188976593105, guid: 96655d018fb28a947bd0ce9a6a4f19ef, type: 3}
-    word: Cane
+  words:
+  - word: Cane
+    image: {fileID: 7537058188976593105, guid: 96655d018fb28a947bd0ce9a6a4f19ef, type: 3}
     audio: {fileID: 8300000, guid: b83932b50b2780c468b2ccf06256d59b, type: 3}
-    type: 1
+    type: 0
 --- !u!4 &805460565
 Transform:
   m_ObjectHideFlags: 0
@@ -1531,10 +1531,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5720493a07ebaa44a9265224f6211b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {x: 0, y: 0, z: 0}
   timeTilNextSpawn: 5
   spawnObject: {fileID: 805460563}
   audioSource: {fileID: 1342870873}
+  wordList: []
+  item_index: 0
+  baseValue: 1
+  totalPoints: 0
+  wrongWords: []
 --- !u!4 &1342870872
 Transform:
   m_ObjectHideFlags: 0

@@ -5,38 +5,42 @@ using UnityEngine;
 public class SpawnerObjects : MonoBehaviour
 {
 
-    //spawning mechanics
+    // Spawn mechanics
     public static Vector3 spawnPoint;
-    public int timeTilNextSpawn = 5;
-    float timer = 0;
+    public uint waitingTime;
+    private float timer;
     private GameObject obj;
 
-    //accessing list 
+    // Access wordList 
     public GameObject spawnObject;
     public AudioSource audioSource;
-    public List<Word.baseobj> WordsList;
+    public List<Word.BaseObj> wordList;
+    private Word.BaseObj word;
 
-    private GameObject Image;
-    private AudioClip clip;
-    public static  SoundType typeS;
-
-    //points mechanics
-    public static Vector3 choice = new Vector3(0,0,0);
-    public List<Word.baseobj> WrongWords = new List<Word.baseobj>();
-    public float BaseValue = 1f;
-    public float totalPoints = 0f;
-    public int i = 0;
-    void Start()
+    // Score mechanics
+    public int  item_index;
+    public float baseValue;
+    public float totalPoints;
+    public static Vector3 choice = Vector3.zero;
+    public List<Word.BaseObj> wrongWords = new List<Word.BaseObj>();
+    
+    
+    private void Start()
     {
-        timer = 0;
-        spawnPoint = transform.position;
-        WordsList = spawnObject.GetComponent<Word>().Words;
-        Image = WordsList[0].image;
-        clip = WordsList[0].audio;
-        typeS = WordsList[0].type;
+        // set environment
+        timer       = 0;
+        waitingTime = 5; // 5 seconds
+        item_index  = 0;
+        baseValue   = 1f;
+        totalPoints = 0f;
+        spawnPoint  = transform.position;
+
+        // get wordlist
+        wordList = spawnObject.GetComponent<Word>().words;
+        UpdateWord();
     }
 
-    private void Update()
+    private void Update2()
     {
         timer += Time.deltaTime;
         if (obj == null)
@@ -45,73 +49,147 @@ public class SpawnerObjects : MonoBehaviour
             {
                 if (choice == spawnPoint)
                 {
-                    i--;
+                    item_index--;
                 }
 
                 else
                 {
                     var left = choice.x < spawnPoint.x;
 
-                    switch (left, typeS)
+                    switch (left, word.type)
                     {
 
                         case (true, SoundType.SOFT):
-                            WrongWords.Add(WordsList[i - 1]);
+                            wrongWords.Add(wordList[item_index - 1]);
                             break;
                         case (true, SoundType.HARD):
-                            totalPoints += BaseValue;
+                            totalPoints += baseValue;
                             break;
                         case (false, SoundType.SOFT):
-                            totalPoints += BaseValue;
+                            totalPoints += baseValue;
                             break;
                         case (false, SoundType.HARD):
-                            WrongWords.Add(WordsList[i - 1]);
+                            wrongWords.Add(wordList[item_index - 1]);
                             break;
-
-
                     }
 
                     choice =  Vector3.zero;
-                    Debug.Log(WrongWords[0].word);
+                    Debug.Log(wrongWords[0].word);
                 }
             }
 
-            if (i >= WordsList.Count)
+            if (item_index >= wordList.Count)
             {
-
-                WordsList = WrongWords;
-                i = 0;
-                WrongWords.Clear();
-                BaseValue = 0.5f;
-                //Debug.Log(BaseValue);
+                wordList = wrongWords;
+                item_index = 0;
+                wrongWords.Clear();
+                baseValue = 0.5f;
             }
-            if (WordsList.Count == 0 && WrongWords.Count == 0) {
-                Debug.Log("fine");
+            if (wordList.Count == 0 && wrongWords.Count == 0) {
                 return;
             
             }
-            Spawn();
-            i += 1;
+            SpawnObject();
+            item_index += 1;
             timer = 0;
         }
-        else if (timer>=timeTilNextSpawn)
+        else if (timer>= waitingTime)
         {
 
             obj.GetComponent<Rigidbody2D>().gravityScale = 1;
 
         }
-
-        
     }
 
-    void Spawn()
+    private void SpawnObject()
     {
-        
-         
-        
-            obj = Instantiate(Image, spawnPoint, Quaternion.identity);
-            obj.GetComponent<Rigidbody2D>().gravityScale = 0;
-            audioSource.PlayOneShot(clip);
-    
+        if (item_index >= wordList.Count) return;
+
+        obj = Instantiate(word.image, spawnPoint, Quaternion.identity);
+        obj.GetComponent<Rigidbody2D>().gravityScale = 0;
+        audioSource.PlayOneShot(word.audio);
+
+        timer = 0;
+    }
+
+    private void UpdateWord()
+    {
+        if (item_index < 0) return;
+        if (wordList.Count <= 0) return;
+        if (item_index >= wordList.Count) return;
+        word = wordList[item_index];
+    }
+
+    private void UpdateWordList()
+    {
+        item_index = 0;
+        baseValue = 0.5f;
+        wordList.Clear();
+
+        if (wrongWords.Count <= 0) return;
+
+        wordList = new List<Word.BaseObj>(wrongWords);
+        wrongWords.Clear();
+    }
+
+    private void CorrectGuess()
+    {
+        totalPoints += baseValue;
+    }
+
+    private void WrongGuess()
+    {
+        wrongWords.Add(word);
+    }
+
+    private void CheckChoice()
+    {
+        // null vector
+        if (choice == Vector3.zero) return;
+        // respawn same item
+        if (choice == spawnPoint) return;
+
+        // switch correct/wrong guess
+        var isLeft = choice.x < spawnPoint.x;
+
+        switch (isLeft, word.type)
+        {
+            case (true, SoundType.SOFT):
+                WrongGuess();
+                break;
+            case (true, SoundType.HARD):
+                CorrectGuess();
+                break;
+            case (false, SoundType.SOFT):
+                CorrectGuess();
+                break;
+            case (false, SoundType.HARD):
+                WrongGuess();
+                break;
+        }
+        ++item_index;
+        UpdateWord();
+        choice = Vector3.zero;
+    }
+
+    private void Update()
+    {
+        // check integrity of lists
+        if (wordList.Count == 0) return;
+        if (item_index >= wordList.Count) UpdateWordList();
+
+        // update timer
+        timer += Time.deltaTime;
+
+        // initialize word spawning behavior
+        if (obj == null)
+        {
+            CheckChoice();
+            SpawnObject();
+        }
+        else if (timer >= waitingTime)
+        {
+            obj.GetComponent<Rigidbody2D>().gravityScale = 1;
+        }
     }
 }

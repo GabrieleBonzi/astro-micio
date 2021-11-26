@@ -2,36 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-public enum SoundType { 
-
-        SOFT,
-        HARD,
-        NONE
-
-
+public enum SoundType {
+    HARD,
+    SOFT,
+    NONE
 }
+
 public class Word : MonoBehaviour
 {
-
-
     [System.Serializable]
-    public struct baseobj
+    public struct BaseObj
     {
-
-
-        public GameObject image;
         public string word;
+        public GameObject image;
         public AudioClip audio;
         public SoundType type;
     }
 
-    public List<baseobj> Words = new List<baseobj>();
-
- 
-
-
-    
-    
+    public List<BaseObj> words = new List<BaseObj>();  
 }
