@@ -4,23 +4,16 @@ using UnityEngine;
 
 public class AddInBucket : MonoBehaviour
 {
+    public GameObject bouncer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.name == "word")
-        Debug.Log(gameObject.name + " Collided");
-        Destroy(col.gameObject);
+        if (col.gameObject.tag == "word")
+        {
+            SpawnerObjects.choice = transform.position;
+            Destroy(col.gameObject);
+            bouncer.SetActive(false);
+        }
     }
 }
 
