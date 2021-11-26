@@ -1,0 +1,50 @@
+[33mcommit 8054c8b650ccb4fc07b71547adb302875e9976ab[m[33m ([m[1;36mHEAD -> [m[1;32malberto[m[33m, [m[1;31morigin/alberto[m[33m)[m
+Author: Alberto Valdes Rey <alberto.valdes@mail.polimi.it>
+Date:   Fri Nov 26 18:52:22 2021 +0100
+
+    first game dynamics fixed
+
+[33mcommit 3b5e5c77401a58ae3a6d9fdfaad66164381ae48c[m
+Author: Gabriele Bonzi <gabri97.gt@gmail.com>
+Date:   Fri Nov 26 17:13:53 2021 +0100
+
+    fixed game loop
+
+[33mcommit 65319428bb0f5cd6bbc28806687c2f5bfa4cc09b[m
+Author: Alberto Valdes Rey <alberto.valdes@mail.polimi.it>
+Date:   Fri Nov 26 13:16:24 2021 +0100
+
+    FIXME: end game 1
+
+[33mcommit 4b63e5c668d68a3150f4a3d9a3016385bba9387a[m
+Author: Alberto Valdes Rey <alberto.valdes@mail.polimi.it>
+Date:   Sat Nov 20 15:00:04 2021 +0100
+
+    first minigame creation
+
+[33mcommit add3578432702111f607d92cb1a981d8eb4f11c3[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: fa807e24 a3cec40b
+Author: Gabriele Bonzi <gabri97.gt@gmail.com>
+Date:   Fri Nov 19 13:43:37 2021 +0100
+
+    Merge pull request #1 from GabrieleBonzi/master
+    
+    first commit
+
+[33mcommit a3cec40b3bc0c3820d63f07f3d61a129b85b34f5[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Alberto Valdes Rey <alberto.valdes@mail.polimi.it>
+Date:   Fri Nov 19 13:38:55 2021 +0100
+
+    first commit
+
+[33mcommit fa807e24b1d22cc1a9fa0b6645714e9d6b080d3f[m
+Author: Gabriele Bonzi <gabri97.gt@gmail.com>
+Date:   Fri Nov 19 12:13:01 2021 +0100
+
+    Update .gitignore fo Unity project
+
+[33mcommit 076819e6b3810323273517cf0db98327126a4ffd[m
+Author: Gabriele Bonzi <gabri97.gt@gmail.com>
+Date:   Fri Nov 19 11:40:47 2021 +0100
+
+    Initial commit
