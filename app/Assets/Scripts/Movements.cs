@@ -35,7 +35,7 @@ public class Movements : MonoBehaviour
         
         transform.rotation = rotation;
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-        Debug.Log(body.velocity);
+       // Debug.Log(body.velocity);
 
         if (Input.GetKey(KeyCode.Space))
             body.velocity = new Vector2(body.velocity.x, force);
