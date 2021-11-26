@@ -18,7 +18,7 @@ public class StartGame : MonoBehaviour
         {
 
 
-        Debug.Log("Collided with: " );
+        
         if (coll.gameObject.name == "kitty")
             {
                 Destroy(coll.gameObject);
