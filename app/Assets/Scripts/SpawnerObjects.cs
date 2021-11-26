@@ -40,67 +40,6 @@ public class SpawnerObjects : MonoBehaviour
         UpdateWord();
     }
 
-    private void Update2()
-    {
-        timer += Time.deltaTime;
-        if (obj == null)
-        {
-            if (choice != Vector3.zero) 
-            {
-                if (choice == spawnPoint)
-                {
-                    item_index--;
-                }
-
-                else
-                {
-                    var left = choice.x < spawnPoint.x;
-
-                    switch (left, word.type)
-                    {
-
-                        case (true, SoundType.SOFT):
-                            wrongWords.Add(wordList[item_index - 1]);
-                            break;
-                        case (true, SoundType.HARD):
-                            totalPoints += baseValue;
-                            break;
-                        case (false, SoundType.SOFT):
-                            totalPoints += baseValue;
-                            break;
-                        case (false, SoundType.HARD):
-                            wrongWords.Add(wordList[item_index - 1]);
-                            break;
-                    }
-
-                    choice =  Vector3.zero;
-                    Debug.Log(wrongWords[0].word);
-                }
-            }
-
-            if (item_index >= wordList.Count)
-            {
-                wordList = wrongWords;
-                item_index = 0;
-                wrongWords.Clear();
-                baseValue = 0.5f;
-            }
-            if (wordList.Count == 0 && wrongWords.Count == 0) {
-                return;
-            
-            }
-            SpawnObject();
-            item_index += 1;
-            timer = 0;
-        }
-        else if (timer>= waitingTime)
-        {
-
-            obj.GetComponent<Rigidbody2D>().gravityScale = 1;
-
-        }
-    }
-
     private void SpawnObject()
     {
         if (item_index >= wordList.Count) return;
