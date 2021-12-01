@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2477839593528620156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2477839593528620154}
+  - component: {fileID: 2477839593528620155}
+  m_Layer: 0
+  m_Name: List tutorial 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2477839593528620154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 3.45, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2477839593528620155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fede4aa2d08876944991afc86dbf7b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - word: Cerotto
+    image: {fileID: 6494609841621230924, guid: 4a7313b18c1281341abe0541c07556fe, type: 3}
+    audio: {fileID: 8300000, guid: a79efeb6ba7912546bcfda96be42f9ac, type: 3}
+    type: 1
+  - word: Chiavi
+    image: {fileID: 8386287038132539620, guid: 9029e61be1117a5409e87b60065d1cdb, type: 3}
+    audio: {fileID: 8300000, guid: 5097ad21a324a3a4886292b85363b94a, type: 3}
+    type: 0

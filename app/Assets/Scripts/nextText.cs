@@ -15,8 +15,11 @@ public class nextText : MonoBehaviour
     public GameObject robot;
 
 
+    private void Start()
+    {
+        robot.GetComponent<Animator>().enabled = false;
+    }
 
-    
     public void loadText()
     {
 
@@ -25,6 +28,7 @@ public class nextText : MonoBehaviour
 
             case 1:
                 Text1.SetActive(true);
+                robot.GetComponent<Animator>().enabled = true;
                 s.SetActive(true);
                 numberClicks++;
                 break;
@@ -42,6 +46,10 @@ public class nextText : MonoBehaviour
                 Text3.transform.localScale = new Vector3(0, 0, 0);
                 Text4.transform.localScale = new Vector3(1.09090078f, 1.09090078f, 1.09090078f);
                 numberClicks++;
+                
+                break;
+            case 5:
+
                 LoadNextLevel();
                 break;
 

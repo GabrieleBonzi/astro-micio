@@ -25,7 +25,7 @@ public class FloatText : MonoBehaviour
         
         rt = TextObject.GetComponent(typeof(RectTransform)) as RectTransform;
         position = rt.anchoredPosition;
-        Debug.Log(position.GetType());
+        
         
     }
 

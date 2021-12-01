@@ -195,7 +195,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: dio
+  m_Text: 'CE, CI, GE, GI SONO SUONI DOLCI, MA SE ARRIVA LA H SI SPAVENTANO E DIVENTANO
+    DURI: CHE, CHI, GHE, GHI.
+
+    CA,CO,CU SONO DURI, MA SE ARRIVA LA LORO AMICA
+    I SI RILASSANO E DIVENTANO DOLCI: CIA, CIO, CIU'
 --- !u!222 &58952649
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -388,12 +392,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor
-    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
-    exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.
-    Duis aute irure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum
+  m_Text: "CIAO! IO SONO BOB E HO BISOGNO DEL TUO AIUTO!\nHO UN NUOVO AMICO CHE NON
+    PARLA ITALIANO, SI CHIAMA ASTROMICIO E LA SUA ASTRONAVE SI E\u2019 SCHIANTATA
+    SUL NOSTRO PIANETA.\nAIUTIAMOLO A IMPARARE LA NOSTRA LINGUA E A RITROVARE I SUOI
+    AMICI ASTROANIMALI, DISPERSI IN TUTTA LA GALASSIA!"
 --- !u!222 &141145905
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -429,7 +431,6 @@ GameObject:
   - component: {fileID: 723068434}
   - component: {fileID: 723068433}
   - component: {fileID: 723068432}
-  - component: {fileID: 723068435}
   - component: {fileID: 723068436}
   m_Layer: 5
   m_Name: Text4
@@ -471,7 +472,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: zeus
+  m_Text: 'PER CONTINUARE IL NOSTRO VIAGGIO AVREMO BISOGNO DI DIAMANTI: POTRAI RACCOGLIERLI
+    ESPLORANDO I PIANETI E COMPLETANDO le SFIDE!
+
+    COMINCIAMO!'
 --- !u!222 &723068433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -499,21 +503,6 @@ RectTransform:
   m_AnchoredPosition: {x: 291, y: -5}
   m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &723068435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723068431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 632710b58759c5a4997b2927723d7c5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  degreesPerSecond: 15
-  amplitude: 0.1
-  frequency: 1
 --- !u!114 &723068436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,7 +695,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: halla
+  m_Text: "PROVIAMO AD INSEGNARGLI LA DIFFERENZA TRA SUONI DOLCI E DURI, COSI\u2019
+    POTRA\u2019 PARLARE LA LINGUA DELLO SPAZIO:\nTU TE LI RICORDI? "
 --- !u!222 &879281436
 CanvasRenderer:
   m_ObjectHideFlags: 0

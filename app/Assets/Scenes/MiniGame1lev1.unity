@@ -1484,9 +1484,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitingTime: 0
-  spawnObject: {fileID: 2477839593528620156, guid: af333bd1b844d7e4fb40c8ef21bb3df8, type: 3}
+  spawnObject: {fileID: 2477839593528620156, guid: d1a458b24637d0c4694788cc5eae5ee4, type: 3}
   audioSource: {fileID: 1342870873}
   wordList: []
+  word:
+    word: 
+    image: {fileID: 0}
+    audio: {fileID: 0}
+    type: 0
   item_index: 0
   baseValue: 1
   totalPoints: 0
