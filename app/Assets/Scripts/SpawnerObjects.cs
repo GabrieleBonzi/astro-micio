@@ -24,9 +24,11 @@ public class SpawnerObjects : MonoBehaviour
     public static float totalPoints;
     public static Vector3 choice = Vector3.zero;
     public List<Word.BaseObj> wrongWords = new List<Word.BaseObj>();
+    public static bool correct;
 
     // End Level
     public Animator transition;
+    public static bool passed = false;
 
     private void Start()
     {
@@ -37,6 +39,7 @@ public class SpawnerObjects : MonoBehaviour
         baseValue = 1f;
         totalPoints = 0f;
         spawnPoint = transform.position;
+        correct = false;
 
         // get wordlist
         wordList = spawnObject.GetComponent<Word>().words;
@@ -59,7 +62,8 @@ public class SpawnerObjects : MonoBehaviour
         if (item_index < 0) return;
         if (wordList.Count <= 0) return;
         if (item_index >= wordList.Count) { 
-            Debug.Log("fine"); 
+            Debug.Log("fine");
+            passed = true;
             return; }
         
         word = wordList[item_index];
@@ -68,7 +72,7 @@ public class SpawnerObjects : MonoBehaviour
     private void UpdateWordList()
     {
         item_index = 0;
-        baseValue = baseValue/2;
+        baseValue = 0.5f;
         wordList.Clear();
 
         if (wrongWords.Count <= 0) return;
@@ -80,16 +84,18 @@ public class SpawnerObjects : MonoBehaviour
 
     private void CorrectGuess()
     {
+        correct = true;
         totalPoints += baseValue;
         
     }
 
     private void WrongGuess()
     {
+        correct = false;
         wrongWords.Add(word);
     }
 
-    private void CheckChoice()
+    public void CheckChoice()
     {
         // null vector
         if (choice == Vector3.zero) return;

@@ -17,8 +17,6 @@ public class Movements : MonoBehaviour
     private bool grounded;
 
 
- 
-
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();

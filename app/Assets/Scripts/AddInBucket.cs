@@ -6,7 +6,10 @@ public class AddInBucket : MonoBehaviour
 {
     public GameObject bouncer;
     public static float timer = 0.5f;
+    public static float timerHelp = 2f;
     public static bool destroyed = false;
+    public static bool dialogue = false;
+    public static bool corr;
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -16,6 +19,7 @@ public class AddInBucket : MonoBehaviour
             Destroy(col.gameObject);
             bouncer.SetActive(false);
             destroyed = true;
+            dialogue = true;
         }
         
     }
@@ -26,13 +30,33 @@ public class AddInBucket : MonoBehaviour
         {
 
             timer -= Time.deltaTime;
-
+ 
         }
         else if(destroyed == true & timer < 0) 
         { 
             destroyed = false;
             timer = 1;
+            
         }
+
+        
+
+        if (dialogue == true & timerHelp > 0)
+        {
+
+            
+            timerHelp -= Time.deltaTime;
+            corr = SpawnerObjects.correct;
+        }
+        else if (dialogue == true & timerHelp < 0)
+        {
+            dialogue = false;
+            timerHelp = 2f;
+
+        }
+
+
+
     }
 }
 
