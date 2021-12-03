@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnerObjects : MonoBehaviour
 {
@@ -17,13 +18,15 @@ public class SpawnerObjects : MonoBehaviour
     public List<Word.BaseObj> wordList;
     public Word.BaseObj word;
 
-    // Score mechanics
+    // Score mechanics and its control
     public int item_index;
     public float baseValue;
-    public float totalPoints;
+    public static float totalPoints;
     public static Vector3 choice = Vector3.zero;
     public List<Word.BaseObj> wrongWords = new List<Word.BaseObj>();
 
+    // End Level
+    public Animator transition;
 
     private void Start()
     {
@@ -55,14 +58,17 @@ public class SpawnerObjects : MonoBehaviour
     {
         if (item_index < 0) return;
         if (wordList.Count <= 0) return;
-        if (item_index >= wordList.Count) return;
+        if (item_index >= wordList.Count) { 
+            Debug.Log("fine"); 
+            return; }
+        
         word = wordList[item_index];
     }
 
     private void UpdateWordList()
     {
         item_index = 0;
-        baseValue = 0.5f;
+        baseValue = baseValue/2;
         wordList.Clear();
 
         if (wrongWords.Count <= 0) return;
@@ -75,6 +81,7 @@ public class SpawnerObjects : MonoBehaviour
     private void CorrectGuess()
     {
         totalPoints += baseValue;
+        
     }
 
     private void WrongGuess()
@@ -112,6 +119,27 @@ public class SpawnerObjects : MonoBehaviour
         choice = Vector3.zero;
     }
 
+    IEnumerator LoadLevel(int levelIndex)
+    {
+
+
+        //Play Animation
+        transition.SetTrigger("Start");
+
+        //Wait
+        yield return new WaitForSeconds(1);
+
+        //Load acene
+        SceneManager.LoadScene(levelIndex);
+
+    }
+    public void LoadNextLevel()
+    {
+
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+
+    }
+
     private void Update()
     {
         // check integrity of lists
@@ -120,6 +148,7 @@ public class SpawnerObjects : MonoBehaviour
 
         // update timer
         timer += Time.deltaTime;
+        
 
         // initialize word spawning behavior
         if (obj == null)
