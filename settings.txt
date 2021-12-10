@@ -1,0 +1,8 @@
+Update merging branches:
+
+[ ] Simona
+[ ] Anna
+[ ] Nicla
+[ ] Ariana
+[ ] Alberto
+[ ] Alberto-robot
