@@ -1,4 +1,8 @@
-branch di simona
+Update merging branches:
 
-
-Bella ho fatto una modifica 
+[x] Simona
+[ ] Anna
+[ ] Nicla
+[ ] Ariana
+[ ] Alberto
+[ ] Alberto-robot
