@@ -30,19 +30,19 @@ public class RobotHelp : MonoBehaviour
         {
             questo.SetActive(true);
 
-            if (AddInBucket.corr == true && first_time)
+            if (SpawnerObjects.correct == true && first_time)
             {
                 Debug.Log(true);
-                Debug.Log(AddInBucket.corr);
-                index = Random.Range(0, 1);
+                Debug.Log(SpawnerObjects.correct);
+                index = Random.Range(0, 2);
                 Debug.Log(index);
                 first_time = false;
             }
-            else if (AddInBucket.corr == false && first_time)
+            else if (SpawnerObjects.correct == false && first_time)
             {
                 Debug.Log(false);
-                index = Random.Range(2, 3);
-                Debug.Log(AddInBucket.corr);
+                index = Random.Range(2, 4);
+                Debug.Log(SpawnerObjects.correct);
                 Debug.Log(index);
                 first_time = false;
 

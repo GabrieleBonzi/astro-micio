@@ -45,10 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   words:
   - word: Cerotto
-    image: {fileID: 6494609841621230924, guid: 4a7313b18c1281341abe0541c07556fe, type: 3}
+    image: {fileID: 6477630458368682575, guid: d3be9b14e4e145346b391305b16f7e7f, type: 3}
     audio: {fileID: 8300000, guid: a79efeb6ba7912546bcfda96be42f9ac, type: 3}
     type: 1
   - word: Chiavi
-    image: {fileID: 8386287038132539620, guid: 9029e61be1117a5409e87b60065d1cdb, type: 3}
+    image: {fileID: 1714375521953426942, guid: 5b444fb24774a6c4ca63fa20fd31ec34, type: 3}
     audio: {fileID: 8300000, guid: 5097ad21a324a3a4886292b85363b94a, type: 3}
     type: 0

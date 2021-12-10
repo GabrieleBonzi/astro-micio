@@ -18,6 +18,9 @@ public class SpawnerObjects : MonoBehaviour
     public List<Word.BaseObj> wordList;
     public Word.BaseObj word;
 
+    // timer
+    public GameObject timebar;
+
     // Score mechanics and its control
     public int item_index;
     public float baseValue;
@@ -25,6 +28,10 @@ public class SpawnerObjects : MonoBehaviour
     public static Vector3 choice = Vector3.zero;
     public List<Word.BaseObj> wrongWords = new List<Word.BaseObj>();
     public static bool correct;
+    public AudioSource CorrErr;
+    public AudioClip corr;
+    public AudioClip err;
+    public AudioClip end;
 
     // End Level
     public Animator transition;
@@ -49,10 +56,11 @@ public class SpawnerObjects : MonoBehaviour
     private void SpawnObject()
     {
         if (item_index >= wordList.Count) return;
-
+        timebar.GetComponent<Animator>().enabled = true;
         obj = Instantiate(word.image, spawnPoint, Quaternion.identity);
         obj.GetComponent<Rigidbody2D>().gravityScale = 0;
         audioSource.PlayOneShot(word.audio);
+
 
         timer = 0;
     }
@@ -62,8 +70,8 @@ public class SpawnerObjects : MonoBehaviour
         if (item_index < 0) return;
         if (wordList.Count <= 0) return;
         if (item_index >= wordList.Count) { 
-            Debug.Log("fine");
-            passed = true;
+            //Debug.Log("fine");
+            //passed = true;
             return; }
         
         word = wordList[item_index];
@@ -75,7 +83,11 @@ public class SpawnerObjects : MonoBehaviour
         baseValue = 0.5f;
         wordList.Clear();
 
-        if (wrongWords.Count <= 0) return;
+        if (wrongWords.Count <= 0) {
+            Debug.Log("fine");
+            audioSource.PlayOneShot(end);
+            passed = true;
+            return; }
 
         wordList = new List<Word.BaseObj>(wrongWords);
         wrongWords.Clear();
@@ -86,13 +98,15 @@ public class SpawnerObjects : MonoBehaviour
     {
         correct = true;
         totalPoints += baseValue;
-        
+        CorrErr.PlayOneShot(corr);
+
     }
 
     private void WrongGuess()
     {
         correct = false;
         wrongWords.Add(word);
+        CorrErr.PlayOneShot(err);
     }
 
     public void CheckChoice()
@@ -122,6 +136,7 @@ public class SpawnerObjects : MonoBehaviour
         }
         ++item_index;
         UpdateWord();
+        //correct = true;
         choice = Vector3.zero;
     }
 
@@ -164,7 +179,9 @@ public class SpawnerObjects : MonoBehaviour
         }
         else if (timer >= waitingTime)
         {
+            
             obj.GetComponent<Rigidbody2D>().gravityScale = 1;
+            timebar.GetComponent<Animator>().enabled = false;
         }
         if (item_index >= wordList.Count) UpdateWordList();
     }

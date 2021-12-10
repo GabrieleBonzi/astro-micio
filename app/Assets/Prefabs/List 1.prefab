@@ -49,38 +49,38 @@ MonoBehaviour:
     audio: {fileID: 8300000, guid: 151ebcad182d2564cb94c092bfbc0401, type: 3}
     type: 0
   - word: Cappello
-    image: {fileID: 1888594416528016689, guid: 8aab4f855cfc0e14f9f2036fdc57b49f, type: 3}
+    image: {fileID: 2740719071024784617, guid: 6247132f65403dc47ab846a6416ffc69, type: 3}
     audio: {fileID: 8300000, guid: e8be677050423b74481a19a4c45d2bf6, type: 3}
     type: 0
   - word: Cervello
-    image: {fileID: 4536727410005663975, guid: 027e94799c03e43499265cef6bb0f672, type: 3}
+    image: {fileID: 7686189010797140793, guid: a2731f254cfc1ce48846b6e64a0e2ffd, type: 3}
     audio: {fileID: 8300000, guid: e7444ab411693d54ebc3f14ca5e36e90, type: 3}
     type: 1
   - word: Cigno
-    image: {fileID: 6490759470001922380, guid: 29ca3c3088b8127428d187c62434ddc0, type: 3}
+    image: {fileID: 2820277358208261375, guid: 32559242748d0534eacee92ff90dbf5e, type: 3}
     audio: {fileID: 8300000, guid: 6481527c9f74f7d49a2a2b3be55805ec, type: 3}
     type: 1
   - word: Cinghiale
-    image: {fileID: 291081849177063404, guid: 23795452aa13a8142a489f36c52efd2e, type: 3}
+    image: {fileID: 1391657703129928127, guid: ab922549cff699b4fa56a7abf53746b6, type: 3}
     audio: {fileID: 8300000, guid: abc96242d4feae7499884e13356d2b68, type: 3}
     type: 1
   - word: Cipolla
-    image: {fileID: 2941771823622115313, guid: 85ef80f199e0f094c9c8e2aeca8fdc61, type: 3}
+    image: {fileID: 1558822299817813632, guid: cb6feabc7d86b914b8a9080bd78df291, type: 3}
     audio: {fileID: 8300000, guid: cd792f7131abfdd47b7e15e750f2ff5a, type: 3}
     type: 1
   - word: Coccodrillo
-    image: {fileID: 6708634317775404538, guid: 6a24f9b8cc7a3af448a438433ccf893b, type: 3}
+    image: {fileID: 3526513810653280634, guid: fda79905f35569e4bbec1f303f35c412, type: 3}
     audio: {fileID: 8300000, guid: e5c3cbae3f4ef834e9757a570f67e81a, type: 3}
     type: 0
   - word: Coda
-    image: {fileID: 7643920131289128945, guid: d953831b15c214f4e8bba7da3ca96e91, type: 3}
+    image: {fileID: 8740882329242932645, guid: 9fb8d47a783f2184dbcafa6cd8f7d2ba, type: 3}
     audio: {fileID: 8300000, guid: 10f142e98d75fb94e8b2ad47e1f0329a, type: 3}
     type: 0
   - word: Cozza
-    image: {fileID: 1325925546451653709, guid: ff58ee866b386834c8de626c93a5c1b9, type: 3}
+    image: {fileID: 2403862454570734481, guid: a80b3de48acaabf418c83cb53360faa5, type: 3}
     audio: {fileID: 8300000, guid: fe6017d252afe0b409d37cd39b2aaf7d, type: 3}
     type: 0
   - word: Cuore
-    image: {fileID: 599736539515320087, guid: e24a19bd4c9950d4791d06b957bf0949, type: 3}
+    image: {fileID: 6175449891802523457, guid: 08201e220ed7bbd4589e246d74a2271c, type: 3}
     audio: {fileID: 8300000, guid: ede30cfe19303964ca1c46169f9bc8cd, type: 3}
     type: 0

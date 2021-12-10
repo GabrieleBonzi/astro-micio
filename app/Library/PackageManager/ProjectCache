@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637733584912094481
-    m_Hash: 478404305
+      ticks: 637741458351909801
+    m_Hash: 3022541268
   m_LockFileStatus:
     m_FilePath: C:/Users/megaa/OneDrive/Desktop/Unity Hub/giochi creati/training1/astro-micio/app/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637733584912189497
-    m_Hash: 3409975477
+      ticks: 637741458351915220
+    m_Hash: 591972834
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

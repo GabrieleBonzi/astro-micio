@@ -19,6 +19,10 @@ public class NextTextTUTORIAL : MonoBehaviour
     public GameObject background;
     public  GameObject canvas;
 
+    // audio 
+    public AudioSource speaker;
+    public AudioClip audio2;
+    
 
     private void Start()
     {
@@ -40,11 +44,15 @@ public class NextTextTUTORIAL : MonoBehaviour
             case 1:
                 Text1.transform.localScale = new Vector3(0, 0, 0);
                 Text2.transform.localScale = new Vector3(1.09090078f, 1.09090078f, 1.09090078f);
+                speaker.Stop();
+                speaker.PlayOneShot(audio2);
                 numberClicks++;
                 break;
             case 2:
                 Text2.transform.localScale = new Vector3(0, 0, 0);
                 Text3.transform.localScale = new Vector3(1.09090078f, 1.09090078f, 1.09090078f);
+                speaker.Stop();
+                
                 s.SetActive(false);
                 background.SetActive(false);
                 numberClicks++;

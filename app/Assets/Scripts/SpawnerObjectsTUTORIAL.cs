@@ -23,6 +23,9 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
     public float totalPoints;
     public static Vector3 choice = Vector3.zero;
     public List<Word.BaseObj> wrongWords = new List<Word.BaseObj>();
+    public AudioSource CorrErr;
+    public AudioClip corr;
+    public AudioClip err;
 
 
 
@@ -38,6 +41,15 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
     public GameObject robot;
     private int counter=0;
 
+    //audio
+    public AudioSource speaker;
+    public AudioClip audio1;
+    public AudioClip audio3;
+    public AudioClip audio4;
+    public AudioClip audio5;
+
+    
+
     private void Start()
     {
         // set environment
@@ -51,6 +63,7 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
         // get wordlist
         wordList = spawnObject.GetComponent<Word>().words;
         UpdateWord();
+        speaker.PlayOneShot(audio1);
     }
 
     private void SpawnObject()
@@ -80,6 +93,8 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
         {
 
             Debug.Log("fine");
+            speaker.Stop();
+            speaker.PlayOneShot(audio5);
             controller.SetActive(true);
             background.SetActive(true);
             buttonL.SetActive(false);
@@ -112,11 +127,13 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
     private void CorrectGuess()
     {
         totalPoints += baseValue;
+        CorrErr.PlayOneShot(corr);
     }
 
     private void WrongGuess()
     {
         wrongWords.Add(word);
+
     }
 
     private void CheckChoice()
@@ -160,7 +177,11 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
             canvas.SetActive(true);
             button.SetActive(false);
             robot.GetComponent<Animator>().enabled = true;
+            speaker.Stop();
+            speaker.PlayOneShot(audio3);
             tsR.SetActive(true);
+            buttonR.SetActive(false);
+            buttonL.SetActive(true);
             ActiveBouncer.control = 1;
             counter = 0;
 
@@ -179,7 +200,12 @@ public class SpawnerObjectsTUTORIAL : MonoBehaviour
             canvas.SetActive(true);
             button.SetActive(false);
             robot.GetComponent<Animator>().enabled = true;
+            speaker.Stop();
+            speaker.PlayOneShot(audio4);
             tsL.SetActive(true);
+            buttonR.SetActive(true);
+            buttonL.SetActive(false);
+
             ActiveBouncer.control = 2;
             counter = 0;
 

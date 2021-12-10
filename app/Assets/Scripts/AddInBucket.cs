@@ -6,7 +6,7 @@ public class AddInBucket : MonoBehaviour
 {
     public GameObject bouncer;
     public static float timer = 0.5f;
-    public static float timerHelp = 2f;
+    public static float timerHelp = 7f;
     public static bool destroyed = false;
     public static bool dialogue = false;
     public static bool corr;
@@ -46,12 +46,12 @@ public class AddInBucket : MonoBehaviour
 
             
             timerHelp -= Time.deltaTime;
-            corr = SpawnerObjects.correct;
+            
         }
         else if (dialogue == true & timerHelp < 0)
         {
             dialogue = false;
-            timerHelp = 2f;
+            timerHelp = 7f;
 
         }
 
