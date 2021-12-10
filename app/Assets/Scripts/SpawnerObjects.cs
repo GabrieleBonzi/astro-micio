@@ -21,6 +21,7 @@ public class SpawnerObjects : MonoBehaviour
     // timer
     public GameObject timebar;
 
+
     // Score mechanics and its control
     public int item_index;
     public float baseValue;
@@ -57,6 +58,7 @@ public class SpawnerObjects : MonoBehaviour
     {
         if (item_index >= wordList.Count) return;
         timebar.GetComponent<Animator>().enabled = true;
+        //timebar.GetComponent<Animator>().Play("time_bar");
         obj = Instantiate(word.image, spawnPoint, Quaternion.identity);
         obj.GetComponent<Rigidbody2D>().gravityScale = 0;
         audioSource.PlayOneShot(word.audio);
@@ -179,9 +181,10 @@ public class SpawnerObjects : MonoBehaviour
         }
         else if (timer >= waitingTime)
         {
-            
-            obj.GetComponent<Rigidbody2D>().gravityScale = 1;
             timebar.GetComponent<Animator>().enabled = false;
+            obj.GetComponent<Rigidbody2D>().gravityScale = 1;
+            
+            timebar.transform.localScale = new Vector3(1, 1, 1);
         }
         if (item_index >= wordList.Count) UpdateWordList();
     }

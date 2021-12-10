@@ -7,13 +7,16 @@ public class DestroyErrors : MonoBehaviour
     public GameObject bouncer;
     private Collision2D collis;
     public GameObject obj;
+    public GameObject temp;
     public float timer=1f;
 
     private void Start() {
 
         collis = new Collision2D();
-        obj = new GameObject();
-    
+        temp = new GameObject();
+        obj = temp;
+        
+
     }
 
 
@@ -39,7 +42,7 @@ public class DestroyErrors : MonoBehaviour
         if (timer <= 0 & obj.activeInHierarchy & obj.tag == "word")
         {
             Destroy(collis.gameObject);
-            obj = new GameObject();
+            obj = temp;
             timer = 1f;
             bouncer.SetActive(false);
         }
