@@ -38,7 +38,7 @@ public class SpawnerObjects : MonoBehaviour
     public Animator transition;
     public static bool passed = false;
 
-    private void Start()
+    private void Awake()
     {
         // set environment
         timer = 0;
@@ -51,6 +51,8 @@ public class SpawnerObjects : MonoBehaviour
 
         // get wordlist
         wordList = spawnObject.GetComponent<Word>().words;
+        //Game.PlayedLevel();
+        Debug.Log(Game.currentWorld);
         UpdateWord();
     }
 
@@ -71,9 +73,7 @@ public class SpawnerObjects : MonoBehaviour
     {
         if (item_index < 0) return;
         if (wordList.Count <= 0) return;
-        if (item_index >= wordList.Count) { 
-            //Debug.Log("fine");
-            //passed = true;
+        if (item_index >= wordList.Count) {
             return; }
         
         word = wordList[item_index];
@@ -88,7 +88,9 @@ public class SpawnerObjects : MonoBehaviour
         if (wrongWords.Count <= 0) {
             //Debug.Log("fine");
             audioSource.PlayOneShot(end);
-            //passed = true;
+            passed = true;
+            Game.CompleatedLevel(totalPoints);
+            Game.SaveGameInfo();
             return; }
 
         wordList = new List<Word.BaseObj>(wrongWords);
@@ -166,14 +168,7 @@ public class SpawnerObjects : MonoBehaviour
     private void Update()
     {
 
-        if (wordList.Count == 0 && wrongWords.Count==0) 
-        {
-            
-            //audioSource.PlayOneShot(end);
-            
-            Game.CompleatedLevel(totalPoints);
-            Debug.Log(Game.worlds[0].levels[0].total_points);
-        }
+        if (passed == true) return;
         // check integrity of lists
         if (wordList.Count == 0) return;
 

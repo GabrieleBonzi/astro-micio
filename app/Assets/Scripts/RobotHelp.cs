@@ -33,18 +33,18 @@ public class RobotHelp : MonoBehaviour
 
             if (SpawnerObjects.correct == true && first_time)
             {
-                Debug.Log(true);
-                Debug.Log(SpawnerObjects.correct);
+                //Debug.Log(true);
+                //Debug.Log(SpawnerObjects.correct);
                 index = Random.Range(0, 2);
-                Debug.Log(index);
+                //Debug.Log(index);
                 first_time = false;
             }
             else if (SpawnerObjects.correct == false && first_time)
             {
-                Debug.Log(false);
+                //Debug.Log(false);
                 index = Random.Range(2, 4);
-                Debug.Log(SpawnerObjects.correct);
-                Debug.Log(index);
+                //Debug.Log(SpawnerObjects.correct);
+                //Debug.Log(index);
                 first_time = false;
 
             }

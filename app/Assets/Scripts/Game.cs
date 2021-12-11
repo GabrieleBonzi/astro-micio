@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 public class Level
 {
@@ -22,25 +24,28 @@ public class World
     public bool visited;
     public int current_level;
     public int max_level;
-    private bool completed;
-    public List<Level> levels;
+    public bool completed;
+    public bool playedL1;
+    public bool passedL1;
+    public float total_pointsL1;
 
-    public World(int _max_level, List<Level> _levels)
+    public World(int _max_level, Level _levels)
     {
         visited = false;
         current_level = 0;
         max_level = _max_level;
         completed = false;
-        levels = _levels;
+        passedL1 = false;
+        playedL1 = false;
+        total_pointsL1 = 0;
     }
 
     private void UpdateCompleted()
     {
         completed = true;
-        foreach (var level in levels)
-        {
-            if (!level.passed) { completed = false; }
-        }
+
+       if (!passedL1) { completed = false; }
+
     }
 
     public bool Completed()
@@ -55,8 +60,9 @@ public class Game : MonoBehaviour
     static public List<World> worlds;
     static private string save_filename;
     static private string config_filename;
-    static private string[] world_names;
-    static public int currentWorld;
+    static public string[] world_names;
+    static public int currentWorld=0;
+
 
     public Game()
     {
@@ -68,62 +74,76 @@ public class Game : MonoBehaviour
 
     public void Start()
     {
-        LoadGameConfig();
-        Debug.Log(currentWorld+"siumm");
-        SaveGameInfo();
+        LoadOrStartGame();
     }
 
-    public static void LoadGameConfig()
+    public static void LoadGameConfig(string filename)
     {
-        foreach (var filename in world_names)
-        {
+        
             var jsonString = System.IO.File.ReadAllText(Application.dataPath + "/Saves/" + filename + ".json");
             worlds.Add(JsonUtility.FromJson<World>(jsonString));
-        }
+
+
+        
     }
 
-    public static void LoadGameInfo()
+    public static void LoadGameInfo(string filename)
     {
-        foreach (var filename in world_names)
-        {
+        
             var jsonString = System.IO.File.ReadAllText(Application.dataPath + "/Saves/" + filename + "_1.json");
             worlds.Add(JsonUtility.FromJson<World>(jsonString));
-        }
+        
     }
 
     public static void SaveGameInfo()
     {
-        foreach (var world in worlds)
+        //foreach (var world in worlds)
+        //{
+        string game_data_string = JsonUtility.ToJson(worlds[currentWorld]);
+        Debug.Log(worlds[currentWorld]);
+        Debug.Log(game_data_string);
+        Debug.Log(worlds[currentWorld].playedL1);
+        System.IO.File.WriteAllText(Application.dataPath + "/Saves/" + worlds[currentWorld].name + "_1.json", game_data_string);
+        //}
+    }
+
+    public static void LoadOrStartGame() 
+    {
+
+        foreach (var filename in world_names)
         {
-            string game_data_string = JsonUtility.ToJson(world);
-            System.IO.File.WriteAllText(Application.dataPath + "/Saves/" + world.name + "_1.json", game_data_string);
+            if (System.IO.File.Exists(Application.dataPath + "/Saves/" + filename + "_1.json"))
+            {
+                LoadGameInfo(filename);
+            }
+            else
+            {
+                LoadGameConfig(filename);
+            }
         }
     }
 
+
+
     public static void CompleatedLevel( float points) 
     {
-        var level = worlds[currentWorld].current_level;
-        try
-        {
-            var tempv = worlds[currentWorld].levels.Count;
-        }
-        catch (System.Exception)
-        {
-            worlds[currentWorld].levels = new List<Level>();
-            
-        }
+
         
+        worlds[currentWorld].passedL1 = true;
+        worlds[currentWorld].total_pointsL1 = points;
+        worlds[currentWorld].Completed();
         
-            if (worlds[currentWorld].levels.Count < level + 1)
-            {
-                var current_level = new Level();
-                current_level.played = true;
-                worlds[currentWorld].levels.Add(current_level);
-            }
-            worlds[currentWorld].levels[level].passed = true;
-            worlds[currentWorld].levels[level].total_points = points;
-            worlds[currentWorld].Completed();
+    }
+
+    public static void PlayedLevel()
+
+    {
         
+
+
+        worlds[currentWorld].playedL1 = true;
+
+
     }
 
     public static void SetCurrentWorldID(int i)
