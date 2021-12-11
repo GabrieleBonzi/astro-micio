@@ -86,9 +86,9 @@ public class SpawnerObjects : MonoBehaviour
         wordList.Clear();
 
         if (wrongWords.Count <= 0) {
-            Debug.Log("fine");
+            //Debug.Log("fine");
             audioSource.PlayOneShot(end);
-            passed = true;
+            //passed = true;
             return; }
 
         wordList = new List<Word.BaseObj>(wrongWords);
@@ -165,8 +165,19 @@ public class SpawnerObjects : MonoBehaviour
 
     private void Update()
     {
+
+        if (wordList.Count == 0 && wrongWords.Count==0) 
+        {
+            
+            //audioSource.PlayOneShot(end);
+            
+            Game.CompleatedLevel(totalPoints);
+            Debug.Log(Game.worlds[0].levels[0].total_points);
+        }
         // check integrity of lists
         if (wordList.Count == 0) return;
+
+        
         
 
         // update timer

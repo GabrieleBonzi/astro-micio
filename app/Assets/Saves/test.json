@@ -1,0 +1,15 @@
+
+        {
+            "name": "FirstWorld",
+            "visited": true,
+            "current_level": 1,
+            "max_level": 1,
+            "completed": false,
+            "levels": [
+                {
+                    "played": true,
+                    "passed": false,
+                    "total_points": 0
+                }
+            ]
+        }

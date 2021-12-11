@@ -9,6 +9,7 @@ public class RobotHelp : MonoBehaviour
 
 
     public GameObject questo;
+    public GameObject robot;
     private int index;
     public List<GameObject> ValuesText = new List<GameObject>();
     public bool dialogue = false;
@@ -47,7 +48,7 @@ public class RobotHelp : MonoBehaviour
                 first_time = false;
 
             }
-
+            robot.GetComponent<Animator>().enabled = true;
             ValuesText[index].transform.localScale = new Vector3(1f, 1f, 1f);
 
         }
@@ -55,6 +56,7 @@ public class RobotHelp : MonoBehaviour
         {
             questo.SetActive(false);
             ValuesText[index].transform.localScale = new Vector3(0, 0, 0);
+            robot.GetComponent<Animator>().enabled = false;
             first_time = true;
         }
 
