@@ -45,9 +45,7 @@ public class World
     private void UpdateCompleted()
     {
         completed = true;
-
-       if (!passedL1) { completed = false; }
-
+        if (!passedL1) { completed = false; }
     }
 
     public bool Completed()
@@ -76,30 +74,20 @@ public class Game : MonoBehaviour
 
     public void Awake()
     {
-        
-        
         LoadOrStartGame();
-        
-
     }
 
 
     public static void LoadGameConfig(string filename)
     {
-        
             var jsonString = System.IO.File.ReadAllText(Application.dataPath + "/Saves/" + filename + ".json");
-            worlds.Add(JsonUtility.FromJson<World>(jsonString));
-
-
-        
+            worlds.Add(JsonUtility.FromJson<World>(jsonString));   
     }
 
     public static void LoadGameInfo(string filename)
     {
-        
             var jsonString = System.IO.File.ReadAllText(Application.dataPath + "/Saves/" + filename + "_1.json");
             worlds.Add(JsonUtility.FromJson<World>(jsonString));
-        
     }
 
     public static void SaveGameInfo()
@@ -147,21 +135,13 @@ public class Game : MonoBehaviour
     public static void CollectFriend() 
     {
         worlds[currentWorld].friend = true;
-
-            Debug.Log('d');
-
-
+        Debug.Log('d');
     }
 
     public static void PlayedLevel()
 
     {
-        
-
-
         worlds[currentWorld].playedL1 = true;
-
-
     }
 
     public static void SetCurrentWorldID(int i)
