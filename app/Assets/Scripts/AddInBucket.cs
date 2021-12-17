@@ -7,9 +7,16 @@ public class AddInBucket : MonoBehaviour
     public GameObject bouncer;
     public static float timer = 0.5f;
     public static float timerHelp = 7f;
-    public static bool destroyed = false;
-    public static bool dialogue = false;
+    public static bool destroyed;
+    public static bool dialogue;
     public static bool corr;
+
+
+    private void Awake() 
+    {
+        destroyed = false;
+        dialogue = false;
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {

@@ -345,7 +345,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ed9a620b0a0228246840f36d04e62435, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f12e9cddb8d90594da986dc93ae61ec0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3029,7 +3029,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: ed9a620b0a0228246840f36d04e62435, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f12e9cddb8d90594da986dc93ae61ec0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3139,7 +3139,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1247720231}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_MethodName: ThirdWorld
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3943,7 +3943,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d170fdaf747996145b4373b9ed8b6193, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae4dfd3374bc9c347bdbf5087e674985, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5344,7 +5344,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: d170fdaf747996145b4373b9ed8b6193, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae4dfd3374bc9c347bdbf5087e674985, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

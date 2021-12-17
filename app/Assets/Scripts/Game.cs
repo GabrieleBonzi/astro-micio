@@ -148,7 +148,7 @@ public class Game : MonoBehaviour
     {
         worlds[currentWorld].friend = true;
 
-            Debug.Log('d');
+            
 
 
     }

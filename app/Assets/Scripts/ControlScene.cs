@@ -12,16 +12,16 @@ public class ControlScene : MonoBehaviour
 
     void Start()
     {
-        if (Game.worlds[0].completed == true & Game.worlds[0].friend == false) //& tmp = true
+        if (Game.worlds[Game.currentWorld].completed == true & Game.worlds[Game.currentWorld].friend == false) //& tmp = true
         {
             enviroment.transform.position = new Vector3(-9.85999966f, -0.529374003f, -10.3579044f);
-            kitty.transform.position = new Vector3(-6.76999998f, -2.78999996f, -2f);
+            kitty.transform.position = new Vector3(-4.692451f, -2.78999996f, -2f);
         }
-        else if (Game.worlds[0].completed == false & Game.worlds[0].friend == false) //& tmp = true
+        else if (Game.worlds[Game.currentWorld].completed == false & Game.worlds[Game.currentWorld].friend == false) //& tmp = true
         {
             //don't move anything
         }
-        else if (Game.worlds[0].completed == true & Game.worlds[0].friend == true)
+        else if (Game.worlds[Game.currentWorld].completed == true & Game.worlds[Game.currentWorld].friend == true)
         {
             Destroy(cane);
         }

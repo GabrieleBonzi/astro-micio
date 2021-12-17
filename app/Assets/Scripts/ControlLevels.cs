@@ -20,7 +20,7 @@ public class ControlLevels : MonoBehaviour
         }
 
 
-        if (Game.worlds[1].completed == true & Game.worlds[0].friend == true)
+        if (Game.worlds[1].completed == true & Game.worlds[1].friend == true)
         {
             w3.GetComponent<Button>().interactable = true;
         }

@@ -50,7 +50,7 @@ public class StartGame : MonoBehaviour
         transition.SetTrigger("Start");
 
         //Wait
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
 
         //Load acene
         SceneManager.LoadScene(levelIndex);

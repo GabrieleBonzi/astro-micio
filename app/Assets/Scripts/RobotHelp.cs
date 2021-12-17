@@ -16,7 +16,7 @@ public class RobotHelp : MonoBehaviour
     private bool first_time = true;
     
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         dialogue = AddInBucket.dialogue;
     }

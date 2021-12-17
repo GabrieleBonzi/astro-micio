@@ -1339,7 +1339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Complimenti hai superato il primo livello
+  m_Text: Fantastico! Hai superato il secondo livello
 --- !u!222 &531983369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1544,7 +1544,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: gu-fo inizia con un suono duro, premi la parte sinistra dello schermo
+  m_Text: Sca-tola inizia con un suono duro, premi la parte sinistra dello schermo
 --- !u!222 &632906077
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1640,7 +1640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ottimo! sei pronto per il secondo livello '
+  m_Text: Ora sei pronto ad affrontare il prossimo gioco, cominciamo!
 --- !u!222 &635116553
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2153,10 +2153,10 @@ MonoBehaviour:
   buttonL: {fileID: 1486075181}
   robot: {fileID: 262419052}
   speaker: {fileID: 348210754}
-  audio1: {fileID: 8300000, guid: cbf928f013c52124c88fc1d482c6cb01, type: 3}
-  audio3: {fileID: 8300000, guid: ca6cccbb3f7b99a40878f5b728cfcd23, type: 3}
-  audio4: {fileID: 8300000, guid: 7cf3c4666d4f91c40bb21c1ec175d5a2, type: 3}
-  audio5: {fileID: 8300000, guid: a2206fb2c794c194d8fb0461c56f006d, type: 3}
+  audio1: {fileID: 8300000, guid: c11b12100035f0547a7de08456a2f0cd, type: 3}
+  audio3: {fileID: 8300000, guid: 7797896f966de884eb3617821199887a, type: 3}
+  audio4: {fileID: 8300000, guid: 68bbf0c529b2c7840b42a993493e6ece, type: 3}
+  audio5: {fileID: 8300000, guid: 1116707a97c1ca441ac214ac895081aa, type: 3}
 --- !u!82 &843844451
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2354,7 +2354,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ge-nio inizia con un suono dolce, premi la parte destra dello schermo '
+  m_Text: Sci-arpa inizia con un suono dolce, premi la parte destra dello schermo
 --- !u!222 &876599872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2841,7 +2841,7 @@ MonoBehaviour:
   background: {fileID: 166679212}
   canvas: {fileID: 1370235156}
   speaker: {fileID: 348210754}
-  audio2: {fileID: 8300000, guid: dcd10dd5b8420924dbd237a99a6582ae, type: 3}
+  audio2: {fileID: 8300000, guid: e03206065cc1a6744b1e24dcb961483a, type: 3}
 --- !u!114 &1197321765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3834,7 +3834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ora \xE8 il momento di imparare dei nuovi suoni "
+  m_Text: Adesso impareremo la differenza tra sc e sc
 --- !u!222 &2039831836
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1295,6 +1295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909092937}
   - component: {fileID: 909092936}
+  - component: {fileID: 909092938}
   m_Layer: 0
   m_Name: line earth-uranus
   m_TagString: Untagged
@@ -1361,7 +1362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909092935}
   m_LocalRotation: {x: 0.06613592, y: 0.115099356, z: -0.4938003, w: 0.8593832}
-  m_LocalPosition: {x: -8.17277, y: -1.2226043, z: -0.68561935}
+  m_LocalPosition: {x: -8.17277, y: -1.222604, z: -0.6856194}
   m_LocalScale: {x: 0.66787, y: 0.18105, z: 1}
   m_Children:
   - {fileID: 1252426743}
@@ -1369,6 +1370,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 13.141, y: 7.821, z: -58.861}
+--- !u!95 &909092938
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909092935}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2f006b4cf348faf48b22a340f7eb511e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1047645303
 GameObject:
   m_ObjectHideFlags: 0

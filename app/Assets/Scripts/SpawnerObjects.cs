@@ -11,6 +11,7 @@ public class SpawnerObjects : MonoBehaviour
     public uint waitingTime;
     private float timer;
     private GameObject obj;
+    private bool firstobj;
 
     // Access wordList 
     public GameObject spawnObject;
@@ -52,6 +53,23 @@ public class SpawnerObjects : MonoBehaviour
 
     private void Awake()
     {
+        //// set environment
+        //timer = 0;
+        //waitingTime = 5; // 5 seconds
+        //item_index = 0;
+        //baseValue = 1f;
+        //totalPoints = 0f;
+        //spawnPoint = transform.position;
+        //firstobj = true;
+        
+
+        //// get wordlist
+        //wordList = spawnObject.GetComponent<Word>().words;
+        //UpdateWord();
+    }
+
+    private void Start()
+    {
         // set environment
         timer = 0;
         waitingTime = 5; // 5 seconds
@@ -59,22 +77,22 @@ public class SpawnerObjects : MonoBehaviour
         baseValue = 1f;
         totalPoints = 0f;
         spawnPoint = transform.position;
-        correct = false;
+        firstobj = true;
+        passed = false;
 
         // get wordlist
         wordList = spawnObject.GetComponent<Word>().words;
-        
         UpdateWord();
-    }
-
-    private void Start()
-    {
         Game.PlayedLevel();
     }
 
     private void SpawnObject()
     {
-        if (item_index >= wordList.Count) return;
+        if (item_index >= wordList.Count) 
+        {
+            Debug.Log('y');
+            return; 
+        }
         timebar.GetComponent<Animator>().enabled = true;
         //timebar.GetComponent<Animator>().Play("time_bar");
         obj = Instantiate(word.image, spawnPoint, Quaternion.identity);
@@ -314,7 +332,9 @@ public class SpawnerObjects : MonoBehaviour
     private void Update()
     {
 
-        if (passed == true) return;
+
+
+        if (passed == true)return;
         // check integrity of lists
         if (wordList.Count == 0) return;
 
@@ -323,13 +343,20 @@ public class SpawnerObjects : MonoBehaviour
 
         // update timer
         timer += Time.deltaTime;
-        
 
         // initialize word spawning behavior
         if (obj == null)
         {
-            CheckChoice();
-            SpawnObject();
+            if (firstobj)
+            {
+                SpawnObject();
+                firstobj = false;
+            }
+            else
+            {
+                CheckChoice();
+                SpawnObject();
+            }
         }
         else if (timer >= waitingTime)
         {

@@ -363,7 +363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ora \xE8 il momento di imparare dei nuovi suoni "
+  m_Text: Adesso impareremo insieme dei nuovi suoni legati alla lettera G
 --- !u!222 &20503775
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ge-nio inizia con un suono dolce, premi la parte destra dello schermo '
+  m_Text: Ge-nio inizia con un suono dolce, premi la parte destra dello schermo
 --- !u!222 &130924362
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -752,7 +752,7 @@ Transform:
   m_GameObject: {fileID: 148682841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2, y: -0.1, z: 0}
-  m_LocalScale: {x: 0.38568595, y: 0.38568595, z: 0.38568595}
+  m_LocalScale: {x: -0.385686, y: 0.38568595, z: 0.38568595}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -844,7 +844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: gu-fo inizia con un suono duro, premi la parte sinistra dello schermo
+  m_Text: Gu-fo inizia con un suono duro, premi la parte sinistra dello schermo
 --- !u!222 &205739135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1839,7 +1839,7 @@ MonoBehaviour:
   background: {fileID: 1256522589}
   canvas: {fileID: 565859020}
   speaker: {fileID: 1266677025}
-  audio2: {fileID: 8300000, guid: dcd10dd5b8420924dbd237a99a6582ae, type: 3}
+  audio2: {fileID: 8300000, guid: 44dc56798b821e34bb734779dfd71f8a, type: 3}
 --- !u!114 &694378134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,10 +2100,10 @@ MonoBehaviour:
   buttonL: {fileID: 1067967313}
   robot: {fileID: 661731204}
   speaker: {fileID: 1266677025}
-  audio1: {fileID: 8300000, guid: cbf928f013c52124c88fc1d482c6cb01, type: 3}
-  audio3: {fileID: 8300000, guid: ca6cccbb3f7b99a40878f5b728cfcd23, type: 3}
-  audio4: {fileID: 8300000, guid: 7cf3c4666d4f91c40bb21c1ec175d5a2, type: 3}
-  audio5: {fileID: 8300000, guid: a2206fb2c794c194d8fb0461c56f006d, type: 3}
+  audio1: {fileID: 8300000, guid: ba4f805390140044284c245287d84997, type: 3}
+  audio3: {fileID: 8300000, guid: 12c411ad84aa8314baa7329163c5549a, type: 3}
+  audio4: {fileID: 8300000, guid: f2fb22669159a1541a9c20cba94855c6, type: 3}
+  audio5: {fileID: 8300000, guid: cc720e7eb8c6173439d426a6e97845d8, type: 3}
 --- !u!82 &729204545
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2658,7 +2658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003848693}
   m_LocalRotation: {x: -0, y: -0, z: -0.028174305, w: 0.99960303}
-  m_LocalPosition: {x: -4.21, y: -2.58, z: -2}
+  m_LocalPosition: {x: -4.24, y: -3.08, z: -2}
   m_LocalScale: {x: 0.36936, y: 0.36936, z: 0.36936}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3570,7 +3570,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Complimenti hai superato il primo livello
+  m_Text: Complimenti! Hai superato il primo livello
 --- !u!222 &1581753637
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3769,7 +3769,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ottimo! sei pronto per il secondo livello '
+  m_Text: Ottimo! Adesso sei pronto per il secondo livello
 --- !u!222 &1821031046
 CanvasRenderer:
   m_ObjectHideFlags: 0
