@@ -1,7 +1,1 @@
-<<<<<<< HEAD
-branch di nicla
-modifica prova
-=======
-branch di anna
-prova prova, nuova modifica
->>>>>>> anna
+Merging branches...
