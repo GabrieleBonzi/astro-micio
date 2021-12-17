@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenuUI;
-
+    public GameObject s1;
+    public GameObject s2;
+    public GameObject s3;
 
 
     // Update is called once per frame
@@ -22,6 +24,9 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         PauseMenuUI.SetActive(true); //Gameobject activated
+        s1.SetActive(true);
+        s2.SetActive(true);
+        s3.SetActive(true);
         Time.timeScale = 0f; //freeze the game
 
     }
@@ -35,6 +40,12 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         SceneManager.LoadScene("Start");
+    }
+
+    public void Restart()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
 
@@ -55,6 +66,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("ThirdWorld");
     }
+
 
 
 
