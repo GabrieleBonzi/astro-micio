@@ -24,10 +24,28 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         PauseMenuUI.SetActive(true); //Gameobject activated
-        s1.SetActive(true);
-        s2.SetActive(true);
-        s3.SetActive(true);
         Time.timeScale = 0f; //freeze the game
+
+    }
+
+    public void Stats() 
+    {
+       
+            PauseMenuUI.SetActive(true); //Gameobject activated
+            s1.SetActive(true);
+            s2.SetActive(true);
+            s3.SetActive(true);
+            Time.timeScale = 0f; //freeze the game
+    }
+
+    public void StopStats()
+    {
+        PauseMenuUI.SetActive(false); //Gameobject deactivated
+        s1.SetActive(false);
+        s2.SetActive(false);
+        s3.SetActive(false);
+        Time.timeScale = 1f; //normal speed
+
 
     }
 

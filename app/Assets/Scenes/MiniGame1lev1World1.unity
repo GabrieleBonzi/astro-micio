@@ -2287,6 +2287,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 2746528470884591840}
+  s1: {fileID: 0}
+  s2: {fileID: 0}
+  s3: {fileID: 0}
 --- !u!114 &771987016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,6 +2913,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1231949524346776343, guid: 4be14bae0880f74489dd74f38d56d28d, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 32563858}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4be14bae0880f74489dd74f38d56d28d, type: 3}
 --- !u!1 &1307168663
@@ -5223,6 +5230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 2746528470884591840}
+  s1: {fileID: 0}
+  s2: {fileID: 0}
+  s3: {fileID: 0}
 --- !u!1 &2746528471239293537
 GameObject:
   m_ObjectHideFlags: 0
