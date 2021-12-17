@@ -8,13 +8,15 @@ public class LevelLoder : MonoBehaviour
     // Start is called before the first frame update
 
     public Animator transition;
+    public int nextLevel;
+  
     // Update is called once per frame
 
-
+ 
 
     public void LoadNextLevel(){
-
-       StartCoroutine( LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        
+       StartCoroutine( LoadLevel(nextLevel));
         
     
     

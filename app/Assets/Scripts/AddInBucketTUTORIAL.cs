@@ -9,7 +9,7 @@ public class AddInBucketTUTORIAL : MonoBehaviour
     {
         if (col.gameObject.tag == "word")
         {
-            SpawnerObjectsTUTORIAL.choice = transform.position;
+            SpawnerObjectsTUTORIALWorld1.choice = transform.position;
             Destroy(col.gameObject);
             bouncer.SetActive(false);
            

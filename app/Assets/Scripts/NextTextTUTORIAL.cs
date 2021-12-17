@@ -26,7 +26,7 @@ public class NextTextTUTORIAL : MonoBehaviour
 
     private void Start()
     {
-        
+        numberClicks = 1;
     }
 
     public void loadText()

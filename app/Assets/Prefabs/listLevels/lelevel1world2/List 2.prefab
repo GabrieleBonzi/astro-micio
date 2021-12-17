@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2477839593528620156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2477839593528620154}
+  - component: {fileID: 2477839593528620155}
+  m_Layer: 0
+  m_Name: List 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2477839593528620154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 3.45, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2477839593528620155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fede4aa2d08876944991afc86dbf7b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - word: Gallina
+    text: {fileID: 0}
+    image: {fileID: 7778220136715785151, guid: 4c74c0d2899d9564bb321c1de6a0ef43, type: 3}
+    audio: {fileID: 8300000, guid: 4382cdfdc536fc74985df240d6dd0eec, type: 3}
+    type: 0
+  - word: Gambero
+    text: {fileID: 0}
+    image: {fileID: 5170123125873290206, guid: adb0785a721a82c488dc9050004f5dc1, type: 3}
+    audio: {fileID: 8300000, guid: 37514142b57d8d04caa55fc95cf2f7dd, type: 3}
+    type: 0
+  - word: Gelato
+    text: {fileID: 0}
+    image: {fileID: 1518969263823478168, guid: 139cb3185ff70b14489a192d442f29ac, type: 3}
+    audio: {fileID: 8300000, guid: 99c0d3ce4a787f64cac35f0a8b05d80e, type: 3}
+    type: 1
+  - word: Gemelli
+    text: {fileID: 0}
+    image: {fileID: 6300797118384290971, guid: 0962b94ded66e914586cb42ead973d59, type: 3}
+    audio: {fileID: 8300000, guid: cde81cbec7ccbfe449c46fa6ee6f9c7c, type: 3}
+    type: 1
+  - word: Gengiva
+    text: {fileID: 0}
+    image: {fileID: 6947575397579638082, guid: e7c13569f9d524c49ac1c31b5315634b, type: 3}
+    audio: {fileID: 8300000, guid: 470baccb24f9ad242b7dc095ecbb13ec, type: 3}
+    type: 1
+  - word: Ghiacciolo
+    text: {fileID: 0}
+    image: {fileID: 3815002978845767776, guid: 97057869030c5e246a707eb610369883, type: 3}
+    audio: {fileID: 8300000, guid: d4661ecab4ffec349876d85580044745, type: 3}
+    type: 0
+  - word: Gigante
+    text: {fileID: 0}
+    image: {fileID: 2795772902894828857, guid: 04e4a8f3eab6af145a64162fbd654558, type: 3}
+    audio: {fileID: 8300000, guid: fe816fecd1a23314c8ef42455c6c678f, type: 3}
+    type: 1
+  - word: Giraffa
+    text: {fileID: 0}
+    image: {fileID: 5586995456958704019, guid: dd2f42622e61f074bb3178f49329420b, type: 3}
+    audio: {fileID: 8300000, guid: c0ee348a98945b24b85795e4bfdbc293, type: 3}
+    type: 1
+  - word: Guanto
+    text: {fileID: 0}
+    image: {fileID: 6273045349344075438, guid: 77290372a67348c4bb07d8162ad47a09, type: 3}
+    audio: {fileID: 8300000, guid: 9b688bb97e4eecb4ea5d2a8d619e94ce, type: 3}
+    type: 0
+  - word: Ghiande
+    text: {fileID: 0}
+    image: {fileID: 4109174375234163260, guid: b7afad21fcb198d47a55dbcaf339801f, type: 3}
+    audio: {fileID: 8300000, guid: 4e84eba9cfacccd43a981e23549a99b6, type: 3}
+    type: 0

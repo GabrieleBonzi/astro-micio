@@ -8,6 +8,7 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
 
     public Animator transition;
+    public int next_scene;
     
     // Update is called once per frame
     void Update()
@@ -32,7 +33,7 @@ public class StartGame : MonoBehaviour
     public void LoadNextLevel()
     {
 
-        StartCoroutine(LoadLevel(4));
+        StartCoroutine(LoadLevel(next_scene));
 
 
 

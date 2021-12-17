@@ -37,6 +37,18 @@ public class SpawnerObjects : MonoBehaviour
     // End Level
     public Animator transition;
     public static bool passed = false;
+    public GameObject CongratulationsMenuUI;
+
+    //diamonds
+    public GameObject diamond_5;
+    public GameObject diamond_6;
+    public GameObject diamond_7;
+    public GameObject diamond_8;
+    public GameObject diamond_9;
+    public GameObject diamond_10;
+    private Color tmp;
+
+
 
     private void Awake()
     {
@@ -51,9 +63,13 @@ public class SpawnerObjects : MonoBehaviour
 
         // get wordlist
         wordList = spawnObject.GetComponent<Word>().words;
-        //Game.PlayedLevel();
-        Debug.Log(Game.currentWorld);
+        
         UpdateWord();
+    }
+
+    private void Start()
+    {
+        Game.PlayedLevel();
     }
 
     private void SpawnObject()
@@ -86,11 +102,15 @@ public class SpawnerObjects : MonoBehaviour
         wordList.Clear();
 
         if (wrongWords.Count <= 0) {
-            //Debug.Log("fine");
+
+            //END GAME--------
             audioSource.PlayOneShot(end);
             passed = true;
             Game.CompleatedLevel(totalPoints);
             Game.SaveGameInfo();
+            CongratulationsMenuUI.SetActive(true);
+            diamondsDisplay(totalPoints);
+            Time.timeScale = 0f; //freeze the game
             return; }
 
         wordList = new List<Word.BaseObj>(wrongWords);
@@ -164,6 +184,132 @@ public class SpawnerObjects : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
 
     }
+
+
+    private void diamondsDisplay(float points) 
+    {
+
+        if (points >= 4.5f & points <= 5.0f)
+        {
+            //diamond 5
+            tmp = diamond_5.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+        }
+        else if (points >= 5.5f & points <= 6.0f)
+        {
+            //diamond 5
+            tmp = diamond_5.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 6
+            tmp = diamond_6.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_6.GetComponent<SpriteRenderer>().color = tmp;
+        }
+        else if (points >= 6.5f & points <= 7.0f)
+        {
+            //diamond 5
+            tmp = diamond_5.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 6
+            tmp = diamond_6.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_6.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 7
+            tmp = diamond_7.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_7.GetComponent<SpriteRenderer>().color = tmp;
+        }
+        else if (points >= 7.5f & points <= 8.0f)
+        {
+            //diamond 5
+            tmp = diamond_5.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 6
+            tmp = diamond_6.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_6.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 7
+            tmp = diamond_7.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_7.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 8
+            tmp = diamond_8.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_8.GetComponent<SpriteRenderer>().color = tmp;
+        }
+        else if (points >= 8.5f & points <= 9.0f)
+        {
+            //diamond 5
+            tmp = diamond_5.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 6
+            tmp = diamond_6.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_6.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 7
+            tmp = diamond_7.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_7.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 8
+            tmp = diamond_8.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_8.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 9
+            tmp = diamond_9.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_9.GetComponent<SpriteRenderer>().color = tmp;
+        }
+
+        else if (points >= 9.5f & points <= 10f)
+        {
+            //diamond 5
+            tmp = diamond_5.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 6
+            tmp = diamond_6.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_6.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 7
+            tmp = diamond_7.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_7.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 8
+            tmp = diamond_8.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_8.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 9
+            tmp = diamond_9.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_9.GetComponent<SpriteRenderer>().color = tmp;
+
+            //diamond 10
+            tmp = diamond_10.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1f;
+            diamond_10.GetComponent<SpriteRenderer>().color = tmp;
+        }
+       
+    }
+
 
     private void Update()
     {

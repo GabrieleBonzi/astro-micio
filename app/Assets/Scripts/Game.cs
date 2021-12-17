@@ -25,6 +25,7 @@ public class World
     public int current_level;
     public int max_level;
     public bool completed;
+    public bool friend;
     public bool playedL1;
     public bool passedL1;
     public float total_pointsL1;
@@ -35,6 +36,7 @@ public class World
         current_level = 0;
         max_level = _max_level;
         completed = false;
+        friend = false;
         passedL1 = false;
         playedL1 = false;
         total_pointsL1 = 0;
@@ -72,10 +74,15 @@ public class Game : MonoBehaviour
         worlds = new List<World> { };
     }
 
-    public void Start()
+    public void Awake()
     {
+        
+        
         LoadOrStartGame();
+        
+
     }
+
 
     public static void LoadGameConfig(string filename)
     {
@@ -128,11 +135,22 @@ public class Game : MonoBehaviour
     public static void CompleatedLevel( float points) 
     {
 
-        
-        worlds[currentWorld].passedL1 = true;
+        if (points >= 4)
+        {
+            worlds[currentWorld].passedL1 = true;
+        }
         worlds[currentWorld].total_pointsL1 = points;
         worlds[currentWorld].Completed();
         
+    }
+
+    public static void CollectFriend() 
+    {
+        worlds[currentWorld].friend = true;
+
+            Debug.Log('d');
+
+
     }
 
     public static void PlayedLevel()

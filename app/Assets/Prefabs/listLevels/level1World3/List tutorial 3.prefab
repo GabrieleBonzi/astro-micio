@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2477839593528620156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2477839593528620154}
+  - component: {fileID: 2477839593528620155}
+  m_Layer: 0
+  m_Name: List tutorial 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2477839593528620154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 3.45, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2477839593528620155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fede4aa2d08876944991afc86dbf7b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - word: Sciarpa
+    text: {fileID: 0}
+    image: {fileID: 1730099733079640332, guid: 634e2bda9f09a17428e2194741b0f0ce, type: 3}
+    audio: {fileID: 8300000, guid: aa8b86bc34b78a34da578cc0dbb5da3d, type: 3}
+    type: 1
+  - word: Scatola
+    text: {fileID: 0}
+    image: {fileID: 239774150327351265, guid: 8845541c52a3b4747a3d3ec285ccc631, type: 3}
+    audio: {fileID: 8300000, guid: 18f943ae6e5d21a448d0da37cdae71a2, type: 3}
+    type: 0

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2477839593528620156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2477839593528620154}
+  - component: {fileID: 2477839593528620155}
+  m_Layer: 0
+  m_Name: List 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2477839593528620154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 3.45, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2477839593528620155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477839593528620156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fede4aa2d08876944991afc86dbf7b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words:
+  - word: Scacchiera
+    text: {fileID: 0}
+    image: {fileID: 6986768177412607813, guid: 7207b1e0b0381a14a8455605796f4139, type: 3}
+    audio: {fileID: 8300000, guid: 72c33eea895dd884bb35a8281d716369, type: 3}
+    type: 0
+  - word: Scarpa
+    text: {fileID: 0}
+    image: {fileID: 6418588790869194426, guid: e5b03710b945b6b49a3025b033cf3a35, type: 3}
+    audio: {fileID: 8300000, guid: 8013cbc645fa0a644b780d1501863875, type: 3}
+    type: 0
+  - word: Sceriffo
+    text: {fileID: 0}
+    image: {fileID: 1688757939600792301, guid: a90df2304ee393a4d8484b9b32417cab, type: 3}
+    audio: {fileID: 8300000, guid: d01dc3234d940944da702c2f620fe710, type: 3}
+    type: 1
+  - word: Scheletro
+    text: {fileID: 0}
+    image: {fileID: 2498250830537007864, guid: 59eea795a758a98488c2291786c1483f, type: 3}
+    audio: {fileID: 8300000, guid: 87c3bc09f380bb34e946a039495b3b69, type: 3}
+    type: 0
+  - word: Schiuma
+    text: {fileID: 0}
+    image: {fileID: 3647448926400613549, guid: f231661477d354d46a6ff70a0ff052b4, type: 3}
+    audio: {fileID: 8300000, guid: c30d39d0599fdb842a05f6b7cbcf4c96, type: 3}
+    type: 0
+  - word: Scimmia
+    text: {fileID: 0}
+    image: {fileID: 5830266780930005914, guid: ed6c40d437ae60c4492c537ba28ee06c, type: 3}
+    audio: {fileID: 8300000, guid: 10bc398e32a77824b9cf12a4b97e710a, type: 3}
+    type: 1
+  - word: Scoiattolo
+    text: {fileID: 0}
+    image: {fileID: 2155759240745287753, guid: fa83b5ecacbe77845bef9c847b63941e, type: 3}
+    audio: {fileID: 8300000, guid: 08a584f5196b5334099de6a544773199, type: 3}
+    type: 0
+  - word: Scopa
+    text: {fileID: 0}
+    image: {fileID: 3901921319122462604, guid: b016c4e0a996a284f8e94f9efdd27acb, type: 3}
+    audio: {fileID: 8300000, guid: 329d2b523bde3f9428238c115ec326a7, type: 3}
+    type: 0
+  - word: Scorpione
+    text: {fileID: 0}
+    image: {fileID: 7583822679934534354, guid: b42aec8a8a849fa47947cc08199a34ba, type: 3}
+    audio: {fileID: 8300000, guid: 1cd808544c39f3f43a8e1021b2153f01, type: 3}
+    type: 0
+  - word: Scudo
+    text: {fileID: 0}
+    image: {fileID: 2115119674590810476, guid: 086751968c2dea243b7983ff3bc783f0, type: 3}
+    audio: {fileID: 8300000, guid: 69729d80c61f9a64abf1b646065f50ca, type: 3}
+    type: 0

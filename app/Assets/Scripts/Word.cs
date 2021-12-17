@@ -14,6 +14,7 @@ public class Word : MonoBehaviour
     public struct BaseObj
     {
         public string word;
+        public GameObject text;
         public GameObject image;
         public AudioClip audio;
         public SoundType type;
