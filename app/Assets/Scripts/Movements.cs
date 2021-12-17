@@ -49,6 +49,10 @@ public class Movements : MonoBehaviour
 
         transform.rotation = rotation;
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+<<<<<<< HEAD
+=======
+       // Debug.Log(body.velocity);
+>>>>>>> anna
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             jump();

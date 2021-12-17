@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenuUI;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> anna
 
 
     // Update is called once per frame
@@ -15,15 +19,24 @@ public class PauseMenu : MonoBehaviour
     {
         PauseMenuUI.SetActive(false); //Gameobject deactivated
         Time.timeScale = 1f; //normal speed
+<<<<<<< HEAD
 
 
+=======
+    
+        
+>>>>>>> anna
     }
 
     public void Pause()
     {
         PauseMenuUI.SetActive(true); //Gameobject activated
         Time.timeScale = 0f; //freeze the game
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> anna
     }
 
     public void LoadMenu()
@@ -34,6 +47,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+<<<<<<< HEAD
         SceneManager.LoadScene("Start");
     }
 
@@ -59,3 +73,11 @@ public class PauseMenu : MonoBehaviour
 
 
 }
+=======
+        Debug.Log("Quitting menu...");
+        Application.Quit();
+    }
+}
+
+
+>>>>>>> anna
