@@ -92,7 +92,7 @@ public class SpawnerObjectsTUTORIALWorld1 : MonoBehaviour
         if (item_index >= wordList.Count)
         {
 
-            Debug.Log("fine");
+            
             speaker.Stop();
             speaker.PlayOneShot(audio5);
             controller.SetActive(true);
@@ -215,6 +215,8 @@ public class SpawnerObjectsTUTORIALWorld1 : MonoBehaviour
 
     private void Update()
     {
+
+        
         // check integrity of lists
         if (wordList.Count == 0) return;
 
@@ -239,7 +241,7 @@ public class SpawnerObjectsTUTORIALWorld1 : MonoBehaviour
             {
                 counter = 2;
             }
-            Debug.Log("ecco");
+            
 
                 checkTUTORIAL();
             }

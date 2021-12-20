@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SpawnerObjects : MonoBehaviour
 {
@@ -34,11 +35,20 @@ public class SpawnerObjects : MonoBehaviour
     public AudioClip corr;
     public AudioClip err;
     public AudioClip end;
+    //errors
+    public float[] w;
+    public string nameWord;
+    //corrects
+    public float[] correctW;
+
 
     // End Level
     public Animator transition;
     public static bool passed = false;
     public GameObject CongratulationsMenuUI;
+    public GameObject cartapresa;
+    public GameObject cartanonpresa;
+
 
     //diamonds
     public GameObject diamond_5;
@@ -51,22 +61,6 @@ public class SpawnerObjects : MonoBehaviour
 
 
 
-    private void Awake()
-    {
-        //// set environment
-        //timer = 0;
-        //waitingTime = 5; // 5 seconds
-        //item_index = 0;
-        //baseValue = 1f;
-        //totalPoints = 0f;
-        //spawnPoint = transform.position;
-        //firstobj = true;
-        
-
-        //// get wordlist
-        //wordList = spawnObject.GetComponent<Word>().words;
-        //UpdateWord();
-    }
 
     private void Start()
     {
@@ -79,6 +73,8 @@ public class SpawnerObjects : MonoBehaviour
         spawnPoint = transform.position;
         firstobj = true;
         passed = false;
+        w = new float[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        correctW = new float[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
         // get wordlist
         wordList = spawnObject.GetComponent<Word>().words;
@@ -90,12 +86,13 @@ public class SpawnerObjects : MonoBehaviour
     {
         if (item_index >= wordList.Count) 
         {
-            Debug.Log('y');
+            //Debug.Log('y');
             return; 
         }
         timebar.GetComponent<Animator>().enabled = true;
         //timebar.GetComponent<Animator>().Play("time_bar");
         obj = Instantiate(word.image, spawnPoint, Quaternion.identity);
+        nameWord = word.word;
         obj.GetComponent<Rigidbody2D>().gravityScale = 0;
         audioSource.PlayOneShot(word.audio);
 
@@ -124,8 +121,9 @@ public class SpawnerObjects : MonoBehaviour
             //END GAME--------
             audioSource.PlayOneShot(end);
             passed = true;
-            Game.CompleatedLevel(totalPoints);
+            Game.CompleatedLevel(totalPoints,w,correctW);
             Game.SaveGameInfo();
+            Game.SaveGameInfoError();
             CongratulationsMenuUI.SetActive(true);
             diamondsDisplay(totalPoints);
             Time.timeScale = 0f; //freeze the game
@@ -142,6 +140,48 @@ public class SpawnerObjects : MonoBehaviour
         totalPoints += baseValue;
         CorrErr.PlayOneShot(corr);
 
+        //Debugga usando name per capire cosa viene stampato perchè per ora non viene aggiornato il valore
+        // tenendo traccia di anche le risposte giuste 
+        if (nameWord == "Cane" | nameWord == "Gallina" | nameWord == "Scacchiera")
+        {
+            correctW[0] = correctW[0] + 1;
+        }
+        else if (nameWord == "Cappello" | nameWord == "Gambero" | nameWord == "Scarpa")
+        {
+            correctW[1] = correctW[1] + 1;
+        }
+        else if (nameWord == "Cervello" | nameWord == "Gelato" | nameWord == "Sceriffo")
+        {
+            correctW[2] = correctW[2] + 1;
+        }
+        else if (nameWord == "Cigno" | nameWord == "Gemelli" | nameWord == "Scheletro")
+        {
+            correctW[3] = correctW[3] + 1;
+        }
+        else if (nameWord == "Cinghiale" | nameWord == "Gengiva" | nameWord == "Schiuma")
+        {
+            correctW[4] = correctW[4] + 1;
+        }
+        else if (nameWord == "Cipolla" | nameWord == "Ghiacciolo" | nameWord == "Scimmia")
+        {
+            correctW[5] = correctW[5] + 1;
+        }
+        else if (nameWord == "Coccodrillo" | nameWord == "Gigante" | nameWord == "Scoiattolo")
+        {
+            correctW[6] = correctW[6] + 1;
+        }
+        else if (nameWord == "Coda" | nameWord == "Giraffa" | nameWord == "Scopa")
+        {
+            correctW[7] = correctW[7] + 1;
+        }
+        else if (nameWord == "Cozza" | nameWord == "Guanto" | nameWord == "Scorpione")
+        {
+            correctW[8] = correctW[8] + 1;
+        }
+        else if (nameWord == "Cuore" | nameWord == "Ghiande" | nameWord == "Scudo")
+        {
+            correctW[9] = correctW[9] + 1;
+        }
     }
 
     private void WrongGuess()
@@ -149,6 +189,52 @@ public class SpawnerObjects : MonoBehaviour
         correct = false;
         wrongWords.Add(word);
         CorrErr.PlayOneShot(err);
+
+        
+        //collecting wrong guesses NOTA -->(1-err/tot)*100
+        
+        if (nameWord == "Cane" | nameWord == "Gallina" | nameWord == "Scacchiera")
+        {
+            w[0] = w[0] + 1;
+        }
+        else if (nameWord == "Cappello" | nameWord == "Gambero" | nameWord == "Scarpa") 
+        {
+            w[1] = w[1] + 1;
+        }
+        else if (nameWord == "Cervello" | nameWord == "Gelato" | nameWord == "Sceriffo")
+        {
+            w[2] = w[2] + 1;
+        }
+        else if (nameWord == "Cigno" | nameWord == "Gemelli" | nameWord == "Scheletro")
+        {
+            w[3] = w[3] + 1;
+        }
+        else if (nameWord == "Cinghiale" | nameWord == "Gengiva" | nameWord == "Schiuma")
+        {
+            w[4] = w[4] + 1;
+        }
+        else if (nameWord == "Cipolla" | nameWord == "Ghiacciolo" | nameWord == "Scimmia")
+        {
+            w[5] = w[5] + 1;
+        }
+        else if (nameWord == "Coccodrillo" | nameWord == "Gigante" | nameWord == "Scoiattolo")
+        {
+            w[6] = w[6] + 1;
+        }
+        else if (nameWord == "Coda" | nameWord == "Giraffa" | nameWord == "Scopa")
+        {
+            w[7] = w[7] + 1;
+        }
+        else if (nameWord == "Cozza" | nameWord == "Guanto" | nameWord == "Scorpione")
+        {
+            w[8] = w[8] + 1;
+        }
+        else if (nameWord == "Cuore" | nameWord == "Ghiande" | name == "Scudo")
+        {
+            w[9] = w[9] + 1;
+        }
+
+
     }
 
     public void CheckChoice()
@@ -213,6 +299,7 @@ public class SpawnerObjects : MonoBehaviour
             tmp = diamond_5.GetComponent<SpriteRenderer>().color;
             tmp.a = 1f;
             diamond_5.GetComponent<SpriteRenderer>().color = tmp;
+            cartanonpresa.SetActive(true);
         }
         else if (points >= 5.5f & points <= 6.0f)
         {
@@ -225,6 +312,7 @@ public class SpawnerObjects : MonoBehaviour
             tmp = diamond_6.GetComponent<SpriteRenderer>().color;
             tmp.a = 1f;
             diamond_6.GetComponent<SpriteRenderer>().color = tmp;
+            cartanonpresa.SetActive(true);
         }
         else if (points >= 6.5f & points <= 7.0f)
         {
@@ -242,6 +330,8 @@ public class SpawnerObjects : MonoBehaviour
             tmp = diamond_7.GetComponent<SpriteRenderer>().color;
             tmp.a = 1f;
             diamond_7.GetComponent<SpriteRenderer>().color = tmp;
+
+            cartapresa.SetActive(true);
         }
         else if (points >= 7.5f & points <= 8.0f)
         {
@@ -264,6 +354,7 @@ public class SpawnerObjects : MonoBehaviour
             tmp = diamond_8.GetComponent<SpriteRenderer>().color;
             tmp.a = 1f;
             diamond_8.GetComponent<SpriteRenderer>().color = tmp;
+            cartapresa.SetActive(true);
         }
         else if (points >= 8.5f & points <= 9.0f)
         {
@@ -291,6 +382,7 @@ public class SpawnerObjects : MonoBehaviour
             tmp = diamond_9.GetComponent<SpriteRenderer>().color;
             tmp.a = 1f;
             diamond_9.GetComponent<SpriteRenderer>().color = tmp;
+            cartapresa.SetActive(true);
         }
 
         else if (points >= 9.5f & points <= 10f)
@@ -324,6 +416,7 @@ public class SpawnerObjects : MonoBehaviour
             tmp = diamond_10.GetComponent<SpriteRenderer>().color;
             tmp.a = 1f;
             diamond_10.GetComponent<SpriteRenderer>().color = tmp;
+            cartapresa.SetActive(true);
         }
        
     }
@@ -331,7 +424,7 @@ public class SpawnerObjects : MonoBehaviour
 
     private void Update()
     {
-
+        
 
 
         if (passed == true)return;

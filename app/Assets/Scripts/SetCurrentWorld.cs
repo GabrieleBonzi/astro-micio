@@ -9,7 +9,7 @@ public class SetCurrentWorld : MonoBehaviour
     public void Set()
     {
         Game.SetCurrentWorldID(ID);
-        Debug.Log(Game.currentWorld);
+        
 
         
     }

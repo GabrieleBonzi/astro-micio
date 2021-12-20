@@ -15,7 +15,9 @@ public class LevelLoder : MonoBehaviour
  
 
     public void LoadNextLevel(){
+
         
+      
        StartCoroutine( LoadLevel(nextLevel));
         
     
@@ -34,8 +36,8 @@ public class LevelLoder : MonoBehaviour
         //Wait
         yield return new WaitForSeconds(1);
 
-        //Load acene
-        SceneManager.LoadScene(levelIndex);
-    
+
+            SceneManager.LoadScene(levelIndex);
+       
     }
 }

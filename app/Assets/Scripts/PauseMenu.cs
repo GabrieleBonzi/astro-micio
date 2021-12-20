@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenuUI;
+    public Animator transition;
     public GameObject s1;
     public GameObject s2;
     public GameObject s3;
@@ -49,10 +50,24 @@ public class PauseMenu : MonoBehaviour
 
     }
 
+
+
+    public void del()
+    {
+
+        PauseMenuUI.SetActive(true); //Gameobject activated
+    }
+
+    public void Stopdel()
+    {
+        PauseMenuUI.SetActive(false); //Gameobject deactivated
+    }
+
+
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Map");
+        LoadNextLevel("Map");
     }
 
     public void QuitGame()
@@ -60,32 +75,82 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("Start");
     }
 
-    public void Restart()
+    public void CancelProgress() 
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        Game.DeleteSaveings();
+        LoadNextLevel("Start");
     }
 
 
     public void FirstWorld()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("FirstWord");
+
+        if(Game.worlds[Game.currentWorld].friend == false) 
+        {
+            LoadNextLevel("FirstWord");
+        }
+        else
+        {
+            SceneManager.LoadScene("Map");
+        }
+        
     }
 
     public void SecondWorld()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("SecondWorld");
+        if (Game.worlds[Game.currentWorld].friend == false)
+        {
+            LoadNextLevel("SecondWorld");
+        }
+        else
+        {
+            SceneManager.LoadScene("Map");
+        }
     }
 
     public void ThirdWorld()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("ThirdWorld");
+        if (Game.worlds[Game.currentWorld].friend == false)
+        {
+            LoadNextLevel("ThirdWorld");
+        }
+        else
+        {
+            SceneManager.LoadScene("Map");
+        }
     }
 
 
+    public void LoadNextLevel(string world)
+    {
 
+
+
+        StartCoroutine(LoadLevel(world));
+
+
+
+
+
+
+    }
+
+    IEnumerator LoadLevel(string levelIndex)
+    {
+
+
+        //Play Animation
+        transition.SetTrigger("Start");
+
+        //Wait
+        yield return new WaitForSeconds(1);
+
+
+        SceneManager.LoadScene(levelIndex);
+
+    }
 
 }

@@ -50,10 +50,20 @@ public class StartGame : MonoBehaviour
         transition.SetTrigger("Start");
 
         //Wait
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
 
+        var lev = levelIndex + 1;
+   
         //Load acene
-        SceneManager.LoadScene(levelIndex);
+        if (Game.worlds[Game.currentWorld].playedL1 == true)
+        {
+            
+            SceneManager.LoadScene(lev);
+        }
+        else if (Game.worlds[Game.currentWorld].playedL1 == false)
+        {
+            SceneManager.LoadScene(levelIndex);
+        }
 
     }
 }

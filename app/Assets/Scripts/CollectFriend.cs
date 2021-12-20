@@ -7,6 +7,7 @@ public class CollectFriend : MonoBehaviour
 {
     public Animator transition;
     public AudioSource speaker;
+    public AudioSource speaker2;
     private bool first;
 
     private void Start() 
@@ -17,7 +18,7 @@ public class CollectFriend : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
 
-        Debug.Log(Game.currentWorld);
+        
         if (col.gameObject.tag == "Player")
         {
             Game.CollectFriend();
@@ -25,6 +26,7 @@ public class CollectFriend : MonoBehaviour
             if (first == true)
             {
                 speaker.Play();
+                speaker2.Play();
                 first = false;
             }
             StartCoroutine(LoadMAP());

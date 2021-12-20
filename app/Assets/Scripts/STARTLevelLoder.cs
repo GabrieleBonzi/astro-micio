@@ -18,7 +18,7 @@ public class STARTLevelLoder : MonoBehaviour
 
         if (Game.worlds[0].playedL1 == true) 
         {
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 2));
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 4));
         }
         else
         {
