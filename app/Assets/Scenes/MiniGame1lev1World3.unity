@@ -1667,6 +1667,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LevelLoder, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 6646805711020797141, guid: af8396e0f72201b4cadd45d0171bb4d4, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 1015454622}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af8396e0f72201b4cadd45d0171bb4d4, type: 3}
 --- !u!1 &565919073 stripped
