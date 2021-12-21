@@ -3934,7 +3934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attenzione stai per perdere tutti i tupi progressi. Conferma per continuare
+  m_Text: Attenzione stai per perdere tutti i tuoi progressi. Conferma per continuare
 --- !u!222 &615080048
 CanvasRenderer:
   m_ObjectHideFlags: 0
